@@ -16,6 +16,10 @@ const config: Config = {
       fontSize: {
         "giant": "10rem",
       },
+      colors: {
+        "caucuspink": "#fbe4df",
+        "caucusblue": "#051e4f",
+      }
     },
   },
   plugins: [],

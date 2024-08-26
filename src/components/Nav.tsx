@@ -4,6 +4,7 @@ import Image from "next/image"
 import CaucusLogo from "public/images/CaucusLogo.svg"
 import { useState } from "react";
 
+
 export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -12,13 +13,13 @@ export default function Nav() {
     };
     return (<div >
         <div className="h-[5rem] nav flex justify-between items-center px-6 py-4 bg-white">
-            <Link href="/">
+            <Link href="/" className="hover:scale-105">
                 <Image className="w-40" src={CaucusLogo} alt="Senior Caucus Logo" />
             </Link>
             <div className="menu md:flex space-x-6 hidden">
-                <Link href="/members" className="text-black hover:text-blue-600 inter-bold">Members</Link>
-                <Link href="/events" className="text-black hover:text-blue-600 inter-bold">Events</Link>
-                <Link href="/resources" className="text-black hover:text-blue-600 inter-bold">Resources</Link>
+                <Link href="/members" className="text-black hover:text-caucusblue inter-bold hover:scale-105">Members</Link>
+                <Link href="/events" className="text-black hover:text-caucusblue inter-bold hover:scale-105">Events</Link>
+                <Link href="/resources" className="text-black hover:text-caucusblue inter-bold hover:scale-105">Resources</Link>
             </div>
             <div className="sandwich-menu md:hidden">
                 <button onClick={toggleMenu}>
@@ -28,11 +29,11 @@ export default function Nav() {
                 </button>
             </div>
         </div>
-        {menuOpen && 
+        {menuOpen &&
             <div className="mobile-menu flex flex-col items-center py-4 space-y-4 bg-white shadow-md">
-                <Link href="/members" className="text-black hover:text-blue-600 inter-bold">Members</Link>
-                <Link href="/events" className="text-black hover:text-blue-600 inter-bold">Events</Link>
-                <Link href="/resources" className="text-black hover:text-blue-600 inter-bold">Resources</Link>
+                <Link href="/members" className="text-black hover:text-caucusblue inter-bold hover:scale-105">Members</Link>
+                <Link href="/events" className="text-black hover:text-caucusblue inter-bold hover:scale-105">Events</Link>
+                <Link href="/resources" className="text-black hover:text-caucusblue inter-bold hover:scale-105">Resources</Link>
             </div>
         }
     </div>)
