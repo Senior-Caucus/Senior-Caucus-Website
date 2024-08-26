@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 /* globals.css */
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
 
-.main {
+/* .main {
   background-color: white;
 }
 
@@ -14,14 +14,14 @@
   color: black;
   font-family: 'Public Sans', sans-serif;
   font-weight: 700;
-}
-
+} */
+/* 
 #seniorcaucus {
   color: black;
   font-family: 'Public Sans', sans-serif;
   font-weight: 100;
   font-style: italic;
-}
+} */
 
 .logo-container-text {
   height: 75px;
@@ -39,8 +39,8 @@
 .inter-semibold {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  /* make it not italic */
-  font-style: normal;
+   /* make it not italic */
+   font-style: normal;
 }
 
 .inter-regular {
@@ -56,4 +56,4 @@
 .inter-extralight {
   font-family: 'Inter', sans-serif;
   font-weight: 200;
-}
+} 
