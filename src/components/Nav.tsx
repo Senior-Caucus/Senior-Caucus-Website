@@ -10,10 +10,10 @@ export default function Nav() {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
-    return (<div>
-        <div className="nav flex justify-between items-center px-6 py-4 bg-white">
+    return (<div >
+        <div className="h-[5rem] nav flex justify-between items-center px-6 py-4 bg-white">
             <Link href="/">
-                <Image className="w-72" src={CaucusLogo} alt="Senior Caucus Logo" />
+                <Image className="w-40" src={CaucusLogo} alt="Senior Caucus Logo" />
             </Link>
             <div className="menu md:flex space-x-6 hidden">
                 <Link href="/members" className="text-black hover:text-blue-600 inter-bold">Members</Link>

@@ -24,6 +24,7 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
+
       </head>
       <html lang="en">
         <body className={inter.className}>
