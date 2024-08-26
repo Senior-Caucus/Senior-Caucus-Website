@@ -35,3 +35,25 @@
   font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
+
+.inter-semibold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  /* make it not italic */
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.inter-light {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+.inter-extralight {
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+}
