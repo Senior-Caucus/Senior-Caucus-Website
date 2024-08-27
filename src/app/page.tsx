@@ -37,8 +37,8 @@ export default async function Home() {
             </div>
             <div className='flex flex-row items-center mt-4'>
               <Link href="/members" className="hover:scale-105">
-              <div  className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-              <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6" />
+                <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
+                <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6 hover:translate-x-1" />
               </Link>
             </div>
           </div>
@@ -54,8 +54,10 @@ export default async function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
             <div className='flex flex-row items-center mt-4'>
-              <div className='underline underline-offset-1 cursor-pointer'>Check out more</div>
-              <svg className="ml-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+              <Link href="/resources" className="hover:scale-105">
+                <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
+                <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6 hover:translate-x-1" />
+              </Link>
             </div>
           </div>
           <div className='w-[50vw] h-full'>
@@ -73,9 +75,10 @@ export default async function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
             <div className='flex flex-row items-center mt-4'>
-              <div className='underline underline-offset-1 cursor-pointer'>Check out more</div>
-              <svg className="ml-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
-            </div>
+            <Link href="/events" className="hover:scale-105">
+                <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
+                <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6 hover:translate-x-1" />
+              </Link>            </div>
           </div>
           <div className='w-[50vw] sm:h-full h-fit'>
             <Image className="w-full h-auto" src={RecDefault} alt="Resources image" />
