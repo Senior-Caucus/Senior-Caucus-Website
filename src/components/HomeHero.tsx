@@ -10,7 +10,7 @@ export default async function HomeHero() {
             <div className="grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)] w-lvw">
                 <Image className="col-start-1 col-span-full row-start-4 md:col-start-1 md:col-span-11 md:row-start-3 lg:row-start-1 lg:row-span-7 lg:col-start-2 lg:col-span-7 w-full h-aut " src={BridgeBackground} alt="Bridge Background" />
                 <Image
-                    className="opacity-75  brightness-90	 col-start-1 col-span-full row-start-3 md:col-start-1 md:col-span-10 lg:row-start-1 lg:row-span-7 lg:col-start-2 lg:col-span-7 w-full h-aut "
+                    className="opacity-75  brightness-90 col-start-1 col-span-full row-start-3 md:col-start-1 md:col-span-10 lg:row-start-1 lg:row-span-7 lg:col-start-2 lg:col-span-7 w-full h-aut "
                     src={Bridge}
                     alt="Tribeca Bridge"
                 />

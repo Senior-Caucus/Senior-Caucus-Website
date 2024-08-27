@@ -6,17 +6,21 @@ import RecDefault from "public/images/RecDefault.png";
 import Image from 'next/image';
 import Link from 'next/link';
 import findOutArrow from "public/images/FindOutArrow.svg";
+import aboutUsBackground from "public/images/AboutUsBackground.svg";
+import aboutUsBackgroundMobile from "public/images/MobileAboutUsBackGround.svg"
 
 export default async function Home() {
   return (
     <div>
       <HomeHero />
       <div className="w-screen h-screen grid-cols-12 grid-rows-12 grid">
-        <div className="z-0 m-6 text-7xl sm:row-start-1 sm:text-left inter-extralight col-start-1 row-start-2  col-span-full">
+        <div className="z-0 m-6 text-8xl sm:row-start-1 sm:text-left inter-extralight col-start-1 row-start-2  col-span-full">
           About Us
         </div>
-        <Image className="z-1 col-span-11 ml-5 row-start-3 sm:row-start-2 sm:row-span-7 sm:col-span-10 sm:col-start-1 sm:ml-10 md:row-start-3 md:row-span-5 col-start-1 md:ml-20 md:col-span-6" src={RecDefault} alt="About us image" />
-        <div className="z-0 row-start-5 sm:row-start-8 col-start-5 row-span-4 col-span-7 text-2xl inter-extralight">
+        <Image src={aboutUsBackgroundMobile} alt="mobile background" className="md:invisible visible col-start-1 ml-3 col-span-full row-start-2 row-span-full" />
+        <Image src={aboutUsBackground} className='sm:invisible md:visible z-3 w-full h-full z-2 col-start-2 row-start-1 col-span-11 row-span-11' alt="background for the about us page (large verison)" />
+        <Image className="z-2 col-span-11 ml-5 row-start-3 sm:row-start-2 sm:row-span-7 sm:col-span-10 sm:col-start-1 sm:ml-10 md:row-start-3 md:row-span-5 md:col-start-1 md:ml-20 md:col-span-8" src={RecDefault} alt="About us image" />
+        <div className="z-1 sm:row-start-6 md:row-start-8 col-start-5 md:row-span-4 col-span-7 text-2xl inter-extralight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </div>
       </div>
