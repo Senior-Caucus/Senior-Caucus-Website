@@ -1,10 +1,4 @@
-
-interface DepartmentPageProps {
-    params: {
-        departmentName: string;
-    };
-    searchParams: Record<string, string>;
-}
+import { DepartmentPageProps } from "@/@types/PagePropTypes";
 
 export default function DepartmentPage(props: DepartmentPageProps) {
     return (<div>
