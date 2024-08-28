@@ -2,6 +2,7 @@
 import HomeBattle from "public/images/HomeBattle.png";
 import EventsHeroBackgroundLarge from "public/images/EventsHeroBackground.svg"
 import Image from "next/image";
+import MobileEventsHero from "public/images/EventsHeroBackground.svg"
 
 export default async function EventsPage() {
     return (<div>

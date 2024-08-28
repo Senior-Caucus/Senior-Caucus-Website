@@ -1,4 +1,12 @@
-
+import ResourceLeftBackgroundLarge from "public/images/ResourceBackgroundLeft1.svg"
+import ResourceRightBackgroundLarge from "public/images/ResourceBackgroundRightLarge.svg"
+import Image from "next/image";
+import Image1Left from "public/images/ResourceImageLeft1.png";
+import Image2Left from "public/images/ResourceImageLeft2.png";
+import Image1Right from "public/images/ResourceImageRight1.png";
+import Image2Right from "public/images/ResourceImageRight2.png";
+import MobileResourceHero from "public/images/MobileResourceHero.svg";
+import Doge from "public/images/DogeBoy.png"
 
 export default function ResourcesPage() {
     return (<div>
@@ -17,6 +25,12 @@ export default function ResourcesPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
             </div>
+            <Image className="col-start-9 row-start-3 col-span-3 row-span-5 mr-4" src={Image1Right} alt="rightmost image for the resources page" />
+            <Image className="col-start-7 row-start-6 col-span-3 row-span-4" src={Image2Right} alt="leftmost rightward image for the resource page" />
+            <Image className="col-start-4 row-start-2 col-span-4 row-span-5" src={Image2Left} alt="nearest right leftmost image for resource page"/>
+            <Image className="col-start-2 row-start-3 col-span-4 row-span-5" src={Image1Left} alt="leftmost image for resources page" />
+            <Image className="col-start-1 row-start-1 col-span-6 row-span-full m-4" src={ResourceLeftBackgroundLarge} alt="background image for resources page (large)" />
+            <Image className="col-start-10 row-start-1 col-span-full row-span-4 mr-4" src={ResourceRightBackgroundLarge} alt="background for resource image large"/>
         </div>
     </div>);
 }
