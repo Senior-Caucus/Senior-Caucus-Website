@@ -17,10 +17,10 @@ export default async function HomeHero() {
                 <div className="">
                     <div className="mb-0">
                         <div className="absolute bottom-16 right-4 lg:bottom-16 lg:right-8 text-center">
-                            <h2 id="" className="drop-shadow-lg text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[7.9375rem] text-black inter-semibold text-right">
+                            <h2 className="drop-shadow-lg text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[7.9375rem] text-black inter-semibold text-right">
                                 Stuyvesant
                             </h2>
-                            <h2 id="" className="drop-shadow-lg text-7xl md:text-8xl lg:text-9xl xl:text-[7.9375rem] text-black inter-extralight text-right">
+                            <h2 className="drop-shadow-lg text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[7.9375rem] text-black inter-extralight text-right">
                                 Senior Caucus
                             </h2>
                         </div>

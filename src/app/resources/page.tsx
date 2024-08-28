@@ -30,7 +30,7 @@ export default function ResourcesPage() {
             <Image className="col-start-4 row-start-2 col-span-4 row-span-5" src={Image2Left} alt="nearest right leftmost image for resource page"/>
             <Image className="col-start-2 row-start-3 col-span-4 row-span-5" src={Image1Left} alt="leftmost image for resources page" />
             <Image className="col-start-1 row-start-1 col-span-6 row-span-full m-4" src={ResourceLeftBackgroundLarge} alt="background image for resources page (large)" />
-            <Image className="col-start-10 row-start-1 col-span-full row-span-4 mr-4" src={ResourceRightBackgroundLarge} alt="background for resource image large"/>
+            <Image className="col-start-9 row-start-1 col-span-full row-span-4 ml-12" src={ResourceRightBackgroundLarge} alt="background for resource image large"/>
         </div>
     </div>);
 }
