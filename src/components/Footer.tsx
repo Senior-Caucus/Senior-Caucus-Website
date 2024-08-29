@@ -12,17 +12,17 @@ export default async function Footer() {
     return (<div className="w-screen h-80 grid grid-cols-12 grid-rows-12">
         <Image className="w-fit h-fit col-start-2 row-start-2 row-span-10 col-span-10 lg:col-start-4 lg:row-start-4 lg:col-span-7 lg:row-span-4" src={footerBigBackground} alt="footer background with big size" />
         <div className="col-start-2 col-span-9 sm:col-start-4 sm:col-span-5 lg:col-start-5 lg:col-span-4 justify-between row-start-1 row-span-1 flex flex-row w-fill h-fill">
-            <a href="google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <a href="https://google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
                 <Image className="w-10 h-10" src={ticktoklogo} alt="ticktok logo" />
 
             </a>
-            <a href="google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <a href="https://google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
                 <Image className="w-10 h-10" src={instalogo} alt="instagram logo" />
             </a>
-            <a href="google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <a href="https://google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
                 <Image className="w-10 h-10" src={facebooklogo} alt="facebook logo" />
             </a>
-            <a href="google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <a href="https://google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
                 <Image className="w-10 h-10" src={sulogo} alt="su logo" />
             </a>
         </div>
@@ -37,12 +37,17 @@ export default async function Footer() {
                     <div className="inter-bold">Directors</div>
                     <div className="w-5" />
                     <div>
-                        <a href="https://github.com/Elias2660" className="w-fit h-fit transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                            <div className="inline w-1 h-1">Elias Xu</div>
-                        </a> and
-                        <a href="https://github.com/yellowstonepark" className="transition-transform hover:-translate-y-1 hover:scale-105 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                            <div className="inline w-1 h-1"> Otzar Jaffe</div>
-                        </a>
+                        <div className="inline transition-transform hover:scale-105 hover:-translate-y-3 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                            <a href="https://github.com/Elias2660" className="w-fit h-fit">
+                                <div className="inline w-1 h-1">Elias Xu </div>
+                            </a>
+                        </div>
+                        and
+                        <div className="inline transition-transform hover:scale-105 hover:-translate-y-3 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                            <a href="https://github.com/yellowstonepark" className="transition-transform hover:-translate-y-1 hover:scale-105 ">
+                                <div className="inline w-1 h-1"> Otzar Jaffe</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 

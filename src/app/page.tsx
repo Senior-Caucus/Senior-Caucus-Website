@@ -31,7 +31,7 @@ export default async function Home() {
         <Image src={aboutUsBackgroundMobile} alt="mobile background" className="md:invisible visible col-start-1 ml-3 col-span-full row-start-2 row-span-full" />
         <Image src={aboutUsBackground} className='sm:invisible md:visible z-3 w-full h-full z-2 col-start-2 row-start-1 col-span-11 row-span-11' alt="background for the about us page (large verison)" />
         <Image className="z-2 col-start-1 row-span-3 col-span-11 ml-5 row-start-2 sm:row-start-3 sm:row-span-7 sm:col-span-10 sm:col-start-1 sm:ml-10 md:row-start-3 md:row-span-5 md:col-start-1 md:ml-20 md:col-span-8" src={RecDefault} alt="About us image" />
-        <div className="z-1 row-start-5 text-2xl ml-2 col-start-1 col-span-full md:col-start-4 md:col-span-full row-span-full sm:row-start-9 md:row-start-10  md:row-span-4  sm:text-2xl inter-extralight">
+        <div className="z-1 row-start-7 text-2xl ml-2 col-start-1 col-span-full md:col-start-4 md:col-span-full row-span-full sm:row-start-9 md:row-start-10  md:row-span-4  sm:text-2xl inter-extralight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </div>
       </div>
@@ -50,7 +50,7 @@ export default async function Home() {
           <Image className="w-full h-auto" src={RecDefault} alt="dept image 3" />
           <Image className="w-full h-auto" src={RecDefault} alt="dept image 4" />
         </div>
-        <div className='col-start-1 row-start-5 sm:row-start-7 col-span-full text-2xl row-span-full md:col-start-7 ml-4 sm:ml-8 md:row-start-3 md:col-span-6 md:row-span-6 inter-extralight '>
+        <div className='col-start-1 row-start-7 sm:row-start-7 col-span-full text-2xl row-span-full md:col-start-7 ml-4 sm:ml-8 md:row-start-3 md:col-span-6 md:row-span-6 inter-extralight '>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           <br />
           <div className="transition-transform hover:translate-x-1">
@@ -69,7 +69,7 @@ export default async function Home() {
         <Image className="visible md:invisible col-start-1 row-start-1 col-span-full row-span-full" src={ResourcesSectionBackgroundSmall} alt="resources page background (on mobile)" />
         <Image className="col-start-1 row-start-2 ml-4 sm:col-start-2 sm:row-start-2 col-span-full sm:col-span-8 row-span-8 lg:col-start-6 lg:row-start-3 lg:col-span-6 lg:row-span-8" src={RecDefault} alt="Resources image" />
         <div className='sm:ml-2 col-start-1 row-start-1 col-span-full row-span-1 inter-extralight text-6xl sm:text-7xl md:text-8xl'>Resources</div>
-        <div className='ml-2 sm:ml-14 text-2xl md:text-2xl col-start-1 row-start-5 sm:row-start-5 row-span-8 col-span-full md:col-start-1 md:row-start-8 md:col-span-10 md:row-span-4 lg:col-start-1 lg:row-start-3 lg:col-span-6 lg:row-span-6 inter-extralight '>
+        <div className='ml-2 sm:ml-14 text-2xl md:text-2xl col-start-1 row-start-7 sm:row-start-5 row-span-8 col-span-full md:col-start-1 md:row-start-8 md:col-span-10 md:row-span-4 lg:col-start-1 lg:row-start-3 lg:col-span-6 lg:row-span-6 inter-extralight '>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           <br />
           <div className="transition-transform hover:translate-x-1">
@@ -89,7 +89,7 @@ export default async function Home() {
         <Image className="visible md:invisible col-start-1 col-span-full row-start-1 row-span-full" src={EventsSectionBackgroundSmall} alt="events section background for small devices" />
         <Image className="row-start-1 mt-10 col-start-2 col-span-9  md:col-start-6 md:col-span-6 row-span-full w-full h-auto" src={RecDefault} alt="Resources image" />
         <div className='col-start-1 row-start-1 row-span-1 col-span-full inter-extralight text-7xl sm:text-8xl'>Events</div>
-        <div className='row-start-4 row-span-full col-start-1 col-span-full md:col-start-1 md:col-span-7 md:row-start-3 ml-10 md:rows-span-6 inter-extralight text-2xl'>
+        <div className='row-start-6 row-span-full col-start-1 col-span-full md:col-start-1 md:col-span-7 md:row-start-3 ml-10 md:rows-span-6 inter-extralight text-2xl'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           <br />
           <div className='transition-transform hover:translate-x-1'>
@@ -101,6 +101,8 @@ export default async function Home() {
           </div>
         </div>
       </div>
+      <div className="w-screen h-10 sm:h-0" />
+
     </div >
   );
 }
