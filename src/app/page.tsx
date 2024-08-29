@@ -53,10 +53,12 @@ export default async function Home() {
         <div className='col-start-1 row-start-5 sm:row-start-7 col-span-full text-2xl row-span-full md:col-start-7 ml-4 sm:ml-8 md:row-start-3 md:col-span-6 md:row-span-6 inter-extralight '>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           <br />
-          <Link href="/members" className="hover:scale-105">
-            <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-            <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6 hover:translate-x-1" />
-          </Link>
+          <div className="transition-transform hover:translate-x-1">
+            <Link href="/members" className="transition-transform hover:translate-x-1">
+              <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
+              <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6 hover:translate-x-1" />
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -70,10 +72,12 @@ export default async function Home() {
         <div className='ml-2 sm:ml-14 text-2xl md:text-2xl col-start-1 row-start-5 sm:row-start-5 row-span-8 col-span-full md:col-start-1 md:row-start-8 md:col-span-10 md:row-span-4 lg:col-start-1 lg:row-start-3 lg:col-span-6 lg:row-span-6 inter-extralight '>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           <br />
-          <Link href="/resources" className="hover:scale-105">
-            <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-            <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6 hover:translate-x-1" />
-          </Link>
+          <div className="transition-transform hover:translate-x-1">
+            <Link href="/resources" className="transition-transform hover:translate-x-1">
+              <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
+              <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6 hover:translate-x-1" />
+            </Link>
+          </div>
         </div>
 
       </div>
@@ -88,10 +92,13 @@ export default async function Home() {
         <div className='row-start-4 row-span-full col-start-1 col-span-full md:col-start-1 md:col-span-7 md:row-start-3 ml-10 md:rows-span-6 inter-extralight text-2xl'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           <br />
-          <Link href="/events" className="hover:scale-105">
-            <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-            <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6 hover:translate-x-1" />
-          </Link>
+          <div className='transition-transform hover:translate-x-1'>
+
+            <Link href="/events" className="">
+              <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
+              <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6" />
+            </Link>
+          </div>
         </div>
       </div>
     </div >
