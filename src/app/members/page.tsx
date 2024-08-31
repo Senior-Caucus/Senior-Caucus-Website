@@ -11,7 +11,6 @@ import DogeBoy from "public/images/DogeBoy.png";
 
 import DepartmentSection from "@/components/DepartmentSection";
 
-
 export default async function MemberPage() {
     return (<div>
         <div className="w-full grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)]">
