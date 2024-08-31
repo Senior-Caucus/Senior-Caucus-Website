@@ -36,7 +36,7 @@ export default async function MemberPage() {
                 <div className="row-start-1 row-span-1 col-start-1 col-span-full flex justify-center text-8xl inter-extralight">
                     Leadership
                 </div>
-                <div className="row-start-2 row-span-full col-start-1 col-span-full mt-10 grid grid-cols-2 grid-rows-2 gap-4">
+                <div className="row-start-2 row-span-full col-start-1 col-span-full mt-10 grid grid-cols-2 grid-rows-2">
                     <PersonBox
                         className="col-start-1 col-span-1 row-start-1 row-span-1"
                         name="Doge Dogecoin"
@@ -51,7 +51,24 @@ export default async function MemberPage() {
                         image={DogeBoy}
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     />
+                    <PersonBox
+                        className="col-start-1 col-span-1 row-start-2 row-span-1"
+                        name="Doge Dogecoin"
+                        position="Co-President"
+                        image={DogeBoy}
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    />
+                    <PersonBox
+                        className="col-start-2 col-span-1 row-start-2 row-span-1"
+                        name="Doge Dogecoin"
+                        position="Co-President"
+                        image={DogeBoy}
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    />
                 </div>
+            </div>
+            <div className="flex justify-center text-8xl inter-extralight">
+                Departments
             </div>
         </div>
     </div>)
