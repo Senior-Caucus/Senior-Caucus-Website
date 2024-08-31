@@ -28,5 +28,7 @@ export default async function EventsPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
         </div>
+
+        <div className="w-screen min-h-[50vh]"></div>
     </div>);
 }

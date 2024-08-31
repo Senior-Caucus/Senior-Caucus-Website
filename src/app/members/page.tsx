@@ -5,9 +5,12 @@ import HomecomingImage from "public/images/Homecoming.png";
 import GloriousLeaders from "public/images/GloriousLeaders.png"
 import MobileTeamHeroBackground from "public/images/TeamHeroMobileBackground.svg";
 
+import PersonBox from "@/components/PersonBox";
+import DogeBoy from "public/images/DogeBoy.png";
+
 export default async function MemberPage() {
     return (<div>
-        <div className="w-full grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)] md:overflow-x-auto md:overflow-hidden">
+        <div className="w-full grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)]">
             <Image className="overflow-hidden ml-0 overflow-x-auto row-start-3 col-start-1 row-span-full col-span-full lg:col-start-1 lg:mt-4 md:col-span-9 lg:row-start-1 lg:overflow-x-auto lg:row-span-11" src={HomecomingImage} alt="Junior Caucus' events during homecoming" />
             <div className="text-6xl col-start-3 row-start-10 row-span-1 col-span-1 lg:col-start-9 mt-10 ml-20 italic">The</div>
             <div className="text-9xl inter-extralight col-start-3 lg:col-start-9 mr-6 row-start-11 italic">Team</div>
@@ -24,6 +27,19 @@ export default async function MemberPage() {
                     className="w-8 h-8 animate-bounce">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
+            </div>
+        </div>
+        <div className="h-10" />
+        <div className="min-h-[50vh] w-screen">
+            {/* leadership section (head honchos) */}
+            <div className="w-screen h-screen grid grid-col-12 grid-rows-12">
+                <div className="row-start-1 row-span-1 col-start-1 col-span-full flex justify-center text-8xl inter-extralight">
+                    Leadership
+                </div>
+                <div className="row-start-2 row-span-full col-start-1 col-span-full mt-10 grid grid-cols-2 grid-rows-2 gap-4">
+                    <PersonBox className="col-start-1 col-span-1 row-start-1 row-span-1" name="Doge Dogecoin" position="Co-President" image={DogeBoy} />
+                    <PersonBox className="col-start-2 col-span-1 row-start-1 row-span-1" name="Doge Dogecoin" position="Co-President" image={DogeBoy} />
+                </div>
             </div>
         </div>
     </div>)
