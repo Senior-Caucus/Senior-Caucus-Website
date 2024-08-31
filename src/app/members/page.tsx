@@ -5,6 +5,7 @@ import HomecomingImage from "public/images/Homecoming.png";
 import GloriousLeaders from "public/images/GloriousLeaders.png"
 import MobileTeamHeroBackground from "public/images/TeamHeroMobileBackground.svg";
 
+import LeadershipBackgroundLarge from "public/images/LeadershipLargeBackground.svg";
 import PersonBox from "@/components/PersonBox";
 import DogeBoy from "public/images/DogeBoy.png";
 
@@ -37,6 +38,7 @@ export default async function MemberPage() {
                     Leadership
                 </div>
                 <div className="row-start-2 row-span-full col-start-1 col-span-full mt-10 grid grid-cols-2 grid-rows-2">
+                    <Image className="row-start-1 col-start-1 col-span-full row-start-full" src={LeadershipBackgroundLarge} alt="big background leaderhip"/>
                     <PersonBox
                         className="col-start-1 col-span-1 row-start-1 row-span-1"
                         name="Doge Dogecoin"
