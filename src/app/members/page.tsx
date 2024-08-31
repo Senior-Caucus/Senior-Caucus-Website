@@ -8,8 +8,8 @@ import MobileTeamHeroBackground from "public/images/TeamHeroMobileBackground.svg
 import LeadershipBackgroundLarge from "public/images/LeadershipLargeBackground.svg";
 import PersonBox from "@/components/PersonBox";
 import DogeBoy from "public/images/DogeBoy.png";
-import Link from "next/link";
-import findOutArrow from "public/images/FindOutArrow.svg";
+
+import DepartmentSection from "@/components/DepartmentSection";
 
 
 export default async function MemberPage() {
@@ -77,228 +77,173 @@ export default async function MemberPage() {
             </div>
 
             {/* Events */}
-            <div className="grid grid-cols-12 grid-rows-12 w-screen h-[60vh]">
-                <div className="italic text-8xl ml-3 col-start-1 row-start-1 col-span-full row-span-1">
-                    Events
-                </div>
-                <div className="text-1xl inter-extralight row-start-3 col-start-1 col-span-9 row-span-1 ml-3 mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div className="col-start-1 row-start-5 grid grid-cols-2 grid-rows-1 w-screen h-auto -mt-4 -ml-1">
-                    <PersonBox
-                        className="-ml-11"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                    <PersonBox
-                        className="-ml-10"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                </div>
-                <div className="row-start-10 col-start-1 col-span-full row-span-1 bold ml-3 mt-6 transition-transform hover:translate-x-1">
-                    <Link href="/members/events" className="">
-                        <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-                        <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6" />
-                    </Link>
-                </div>
-            </div>
+            <DepartmentSection
+                className=""
+                departmentName="Events"
+                departmentLink="events"
+                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                director1info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Events Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+                director2info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Events Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+            />
 
             {/* graphics */}
-            <div className="grid grid-cols-12 grid-rows-12 w-screen h-[60vh]">
-                <div className="italic text-8xl ml-3 col-start-1 row-start-1 col-span-full row-span-1">
-                    Graphics
-                </div>
-                <div className="text-1xl inter-extralight row-start-3 col-start-1 col-span-9 row-span-1 ml-3 mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div className="col-start-1 row-start-5 grid grid-cols-2 grid-rows-1 w-screen h-auto -mt-4 -ml-1">
-                    <PersonBox
-                        className="-ml-11"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                    <PersonBox
-                        className="-ml-10"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                </div>
-                <div className="row-start-10 col-start-1 col-span-full row-span-1 bold ml-3 mt-6 transition-transform hover:translate-x-1">
-                    <Link href="/members/graphics" className="">
-                        <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-                        <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6" />
-                    </Link>
-                </div>
-            </div>
-            {/* --- */}
+            <DepartmentSection
+                className=""
+                departmentName="Graphics"
+                departmentLink="graphics"
+                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                director1info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Graphics Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+                director2info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Graphics Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+            />
 
             {/* internals */}
-            <div className="grid grid-cols-12 grid-rows-12 w-screen h-[60vh]">
-                <div className="italic text-8xl ml-3 col-start-1 row-start-1 col-span-full row-span-1">
-                    Internals
-                </div>
-                <div className="text-1xl inter-extralight row-start-3 col-start-1 col-span-9 row-span-1 ml-3 mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div className="col-start-1 row-start-5 grid grid-cols-2 grid-rows-1 w-screen h-auto -mt-4 -ml-1">
-                    <PersonBox
-                        className="-ml-11"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                    <PersonBox
-                        className="-ml-10"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                </div>
-                <div className="row-start-10 col-start-1 col-span-full row-span-1 bold ml-3 mt-6 transition-transform hover:translate-x-1">
-                    <Link href="/members/internals" className="">
-                        <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-                        <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6" />
-                    </Link>
-                </div>
-            </div>
+            <DepartmentSection
+                className=""
+                departmentName="Internals"
+                departmentLink="internals"
+                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                director1info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Internals Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+                director2info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Internals Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+            />
+
 
             {/* externals */}
-            <div className="grid grid-cols-12 grid-rows-12 w-screen h-[60vh]">
-                <div className="italic text-8xl ml-3 col-start-1 row-start-1 col-span-full row-span-1">
-                    Externals
-                </div>
-                <div className="text-1xl inter-extralight row-start-3 col-start-1 col-span-9 row-span-1 ml-3 mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div className="col-start-1 row-start-5 grid grid-cols-2 grid-rows-1 w-screen h-auto -mt-4 -ml-1">
-                    <PersonBox
-                        className="-ml-11"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                    <PersonBox
-                        className="-ml-10"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                </div>
-                <div className="row-start-10 col-start-1 col-span-full row-span-1 bold ml-3 mt-6 transition-transform hover:translate-x-1">
-                    <Link href="/members/externals" className="">
-                        <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-                        <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6" />
-                    </Link>
-                </div>
-            </div>
+            <DepartmentSection
+                className=""
+                departmentName="Externals"
+                departmentLink="externals"
+                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                director1info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Externals Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+                director2info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Externals Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+            />
 
             {/* I/T */}
-            <div className="grid grid-cols-12 grid-rows-12 w-screen h-[60vh]">
-                <div className="italic text-8xl ml-3 col-start-1 row-start-1 col-span-full row-span-1">
-                    I/T
-                </div>
-                <div className="text-1xl inter-extralight row-start-3 col-start-1 col-span-9 row-span-1 ml-3 mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div className="col-start-1 row-start-5 grid grid-cols-2 grid-rows-1 w-screen h-auto -mt-4 -ml-1">
-                    <PersonBox
-                        className="-ml-11"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                    <PersonBox
-                        className="-ml-10"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                </div>
-                <div className="row-start-10 col-start-1 col-span-full row-span-1 bold ml-3 mt-6 transition-transform hover:translate-x-1">
-                    <Link href="/members/it" className="">
-                        <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-                        <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6" />
-                    </Link>
-                </div>
-            </div>
+            <DepartmentSection
+                className=""
+                departmentName="I/T"
+                departmentLink="it"
+                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                director1info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "I/T Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+                director2info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "I/T Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+            />
 
             {/* social media */}
-            <div className="grid grid-cols-12 grid-rows-12 w-screen h-[60vh]">
-                <div className="italic text-8xl ml-3 col-start-1 row-start-1 col-span-full row-span-1">
-                    Social Media
-                </div>
-                <div className="text-1xl inter-extralight row-start-3 col-start-1 col-span-9 row-span-1 ml-3 mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div className="col-start-1 row-start-5 grid grid-cols-2 grid-rows-1 w-screen h-auto -mt-4 -ml-1">
-                    <PersonBox
-                        className="-ml-11"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                    <PersonBox
-                        className="-ml-10"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                </div>
-                <div className="row-start-10 col-start-1 col-span-full row-span-1 bold ml-3 mt-6 transition-transform hover:translate-x-1">
-                    <Link href="/members/socialmedia" className="">
-                        <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-                        <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6" />
-                    </Link>
-                </div>
-            </div>
+            <DepartmentSection
+                className=""
+                departmentName="Social Media"
+                departmentLink="socialmedia"
+                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                director1info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Social Media Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+                director2info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Social Media Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+            />
+
             {/* media */}
-            <div className="grid grid-cols-12 grid-rows-12 w-screen h-[60vh]">
-                <div className="italic text-8xl ml-3 col-start-1 row-start-1 col-span-full row-span-1">
-                    Media
-                </div>
-                <div className="text-1xl inter-extralight row-start-3 col-start-1 col-span-9 row-span-1 ml-3 mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div className="col-start-1 row-start-5 grid grid-cols-2 grid-rows-1 w-screen h-auto -mt-4 -ml-1">
-                    <PersonBox
-                        className="-ml-11"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                    <PersonBox
-                        className="-ml-10"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                </div>
-                <div className="row-start-10 col-start-1 col-span-full row-span-1 bold ml-3 mt-6 transition-transform hover:translate-x-1">
-                    <Link href="/members/media" className="">
-                        <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-                        <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6" />
-                    </Link>
-                </div>
-            </div>
+            <DepartmentSection
+                className=""
+                departmentName="Media"
+                departmentLink="media"
+                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                director1info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Media Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+                director2info={
+                    {
+                        directorName: "Doge Dogecoin",
+                        position: "Media Director",
+                        image: DogeBoy,
+                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    }
+                }
+            />
         </div>
     </div>)
 }
