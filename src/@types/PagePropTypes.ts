@@ -1,20 +1,20 @@
 export interface EventPageProps {
     params: {
-        EventName: string;
+        event: string;
     };
     searchParams: Record<string, string>;
 }
 
 export interface DepartmentPageProps {
     params: {
-        departmentName: string;
+        department: string;
     };
     searchParams: Record<string, string>;
 }
 
 export interface ResourcePageProps {
     params: {
-        resourceName: string;
+        resource: string;
     };
     searchParams: Record<string, string>;
 }
