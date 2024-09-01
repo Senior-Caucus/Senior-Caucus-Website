@@ -11,6 +11,8 @@ import DogeBoy from "public/images/DogeBoy.png";
 
 import DepartmentSection from "@/components/DepartmentSection";
 
+import DepartmentBackgrounds from "public/images/DepartmentBackgrounds.svg";
+
 export default async function MemberPage() {
     return (<div>
         <div className="w-full grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)]">
@@ -76,173 +78,176 @@ export default async function MemberPage() {
             </div>
 
             {/* Events */}
-            <DepartmentSection
-                className=""
-                departmentName="Events"
-                departmentLink="events"
-                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                director1info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Events Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            <div className="grid-cols-1 grid-rows-7 grid">
+                <Image className="col-start-1 col-span-1 row-start-1 row-span-full" src={DepartmentBackgrounds} alt="department backgrounds" />
+                <DepartmentSection
+                    className="col-start-1 col-span-1 row-start-1 row-span-1"
+                    departmentName="Events"
+                    departmentLink="events"
+                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director1info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Events Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-                director2info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Events Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director2info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Events Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-            />
+                />
 
-            {/* graphics */}
-            <DepartmentSection
-                className=""
-                departmentName="Graphics"
-                departmentLink="graphics"
-                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                director1info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Graphics Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                {/* graphics */}
+                <DepartmentSection
+                    className="col-start-1 col-span-1 row-start-2 row-span-1"
+                    departmentName="Graphics"
+                    departmentLink="graphics"
+                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director1info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Graphics Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-                director2info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Graphics Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director2info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Graphics Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-            />
+                />
 
-            {/* internals */}
-            <DepartmentSection
-                className=""
-                departmentName="Internals"
-                departmentLink="internals"
-                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                director1info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Internals Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                {/* internals */}
+                <DepartmentSection
+                    className="col-start-1 col-span-1 row-start-3 row-span-1"
+                    departmentName="Internals"
+                    departmentLink="internals"
+                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director1info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Internals Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-                director2info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Internals Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director2info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Internals Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-            />
+                />
 
 
-            {/* externals */}
-            <DepartmentSection
-                className=""
-                departmentName="Externals"
-                departmentLink="externals"
-                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                director1info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Externals Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                {/* externals */}
+                <DepartmentSection
+                    className="col-start-1 col-span-1 row-start-4 row-span-1"
+                    departmentName="Externals"
+                    departmentLink="externals"
+                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director1info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Externals Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-                director2info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Externals Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director2info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Externals Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-            />
+                />
 
-            {/* I/T */}
-            <DepartmentSection
-                className=""
-                departmentName="I/T"
-                departmentLink="it"
-                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                director1info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "I/T Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                {/* I/T */}
+                <DepartmentSection
+                    className="col-start-1 col-span-1 row-start-5 row-span-1"
+                    departmentName="I/T"
+                    departmentLink="it"
+                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director1info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "I/T Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-                director2info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "I/T Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director2info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "I/T Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-            />
+                />
 
-            {/* social media */}
-            <DepartmentSection
-                className=""
-                departmentName="Social Media"
-                departmentLink="socialmedia"
-                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                director1info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Social Media Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                {/* social media */}
+                <DepartmentSection
+                    className="col-start-1 col-span-1 row-start-6 row-span-1"
+                    departmentName="Social Media"
+                    departmentLink="socialmedia"
+                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director1info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Social Media Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-                director2info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Social Media Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director2info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Social Media Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-            />
+                />
 
-            {/* media */}
-            <DepartmentSection
-                className=""
-                departmentName="Media"
-                departmentLink="media"
-                departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                director1info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Media Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                {/* media */}
+                <DepartmentSection
+                    className="col-start-1 col-span-1 row-start-7 row-span-1"
+                    departmentName="Media"
+                    departmentLink="media"
+                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director1info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Media Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-                director2info={
-                    {
-                        directorName: "Doge Dogecoin",
-                        position: "Media Director",
-                        image: DogeBoy,
-                        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director2info={
+                        {
+                            directorName: "Doge Dogecoin",
+                            position: "Media Director",
+                            image: DogeBoy,
+                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        }
                     }
-                }
-            />
+                />
+            </div>
         </div>
     </div>)
 }
