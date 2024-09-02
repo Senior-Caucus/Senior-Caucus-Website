@@ -12,18 +12,9 @@ import DogeBoy from "public/images/DogeBoy.png";
 import DepartmentSection from "@/components/DepartmentSection";
 
 import DepartmentBackgrounds from "public/images/DepartmentBackgrounds.svg";
+import { google } from "googleapis";
 
 export default async function MemberPage() {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/events`, {
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        cache: 'no-store',
-    });
-
-    const data = await response.json();
-
-    console.log(data);
 
     return (<div>
         <div className="w-full grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)]">
