@@ -14,6 +14,17 @@ import DepartmentSection from "@/components/DepartmentSection";
 import DepartmentBackgrounds from "public/images/DepartmentBackgrounds.svg";
 
 export default async function MemberPage() {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/events`, {
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        cache: 'no-store',
+    });
+
+    const data = await response.json();
+
+    console.log(data);
+
     return (<div>
         <div className="w-full grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)]">
             <Image className="overflow-hidden ml-0 overflow-x-auto row-start-3 col-start-1 row-span-full col-span-full lg:col-start-1 lg:mt-4 md:col-span-9 lg:row-start-1 lg:overflow-x-auto lg:row-span-11" src={HomecomingImage} alt="Junior Caucus' events during homecoming" />
