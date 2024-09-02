@@ -35,26 +35,45 @@ export default async function DepartmentPage(props: DepartmentPageProps) {
 
     console.log(name[0][0]);
 
-
-
     return (<div className="min-h-screen w-screen relative">
-        <Image className="invisible md:visible absolute left-0 right-0 w-full h-full object-cover z-1 " src={DepartmentBackgroundLarge} alt="department background" />
-        <Image className="visible md:invisible absolute left-0 right-0 w-full h-full object-cover z-1" src={DepartmentBackgroundSmall} alt="small department background" />
+        <Image className="invisible md:visible absolute left-0 right-0 w-full h-full object-cover -z-1 " src={DepartmentBackgroundLarge} alt="department background" />
+        <Image className="visible md:invisible absolute left-0 right-0 w-full h-full object-cover -z-1" src={DepartmentBackgroundSmall} alt="small department background" />
         <div className="inter-extralight w-screen text-center text-6xl md:text-7xl">
             {name[0][0]}
         </div>
         <div className="inter-bold w-screen text-left text-4xl sm:text-5xl">
             Directors
         </div>
-        <div className="flex flex-wrap flex-row">
-
+        <div className="w-screen h-10" />
+        <div className="flex flex-wrap flex-row h-auto">
+            {directorInfo.map((element, index) => (
+                <PersonBox
+                    className="w-[35rem] h-[15rem]"
+                    key={index}
+                    name={element[0]}
+                    position={element[1]}
+                    image={element[2]}
+                    description={element[3]}
+                />
+            ))}
         </div>
+        <div className="w-screen h-20" />
 
         <div className="inter-bold w-screen text-left text-4xl sm:text-5xl">
             Members
         </div>
-        <div className="flex flex-wrap flex-row">
-
+        <div className="w-screen h-10" />
+        <div className="flex flex-wrap flex-row h-fit gap-10">
+            {memberInfo.map((element, index) => (
+                <PersonBox
+                    className="w-[35rem] h-[15rem]"
+                    key={index}
+                    name={element[0]}
+                    position={element[1]}
+                    image={element[2]}
+                    description={element[3]}
+                />
+            ))}
         </div>
     </div>);
 }
