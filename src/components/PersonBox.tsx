@@ -20,7 +20,7 @@ export default async function PersonBox(props: PersonBoxProps) {
                     <div className="italic">
                         {props.position}
                     </div>
-                    <div className="mt-2 col-start-7 inter-extralight">
+                    <div className="col-start-7 inter-extralight ">
                         {props.description}
                     </div>
                 </div>

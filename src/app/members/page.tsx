@@ -37,10 +37,13 @@ export default async function MemberPage() {
         <div className="h-10" />
         <div className="min-h-[50vh] w-screen">
             {/* leadership section (head honchos) */}
+            <div className="w-screen h-10"/>
+
             <div className="w-screen h-[140vh] md:h-screen grid grid-col-12 grid-rows-12">
                 <div className="row-start-1 row-span-1 col-start-1 col-span-full flex justify-center text-7xl md:text-9xl inter-extralight">
                     Leadership
                 </div>
+                <div className="w-screen h-10"/>
                 <div className="row-start-1 gap-7 md:gap-0 md:row-start-2 row-span-full col-start-1 col-span-full mt-20 grid grid-col-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2">
                     <Image className="row-start-1 col-start-1 col-span-full row-start-full" src={LeadershipBackgroundLarge} alt="big background leaderhip" />
                     <PersonBox
@@ -76,7 +79,7 @@ export default async function MemberPage() {
             <div className="flex justify-center text-7xl md:text-9xl inter-extralight">
                 Departments
             </div>
-
+            <div className="w-screen h-10"/>
             {/* Events */}
             <div className="grid-cols-1 grid-rows-7 grid">
                 <Image className="col-start-1 col-span-1 row-start-1 row-span-full" src={DepartmentBackgrounds} alt="department backgrounds" />
