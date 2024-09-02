@@ -37,11 +37,11 @@ export default async function MemberPage() {
         <div className="h-10" />
         <div className="min-h-[50vh] w-screen">
             {/* leadership section (head honchos) */}
-            <div className="w-screen h-screen grid grid-col-12 grid-rows-12">
-                <div className="row-start-1 row-span-1 col-start-1 col-span-full flex justify-center text-9xl inter-extralight">
+            <div className="w-screen h-[140vh] md:h-screen grid grid-col-12 grid-rows-12">
+                <div className="row-start-1 row-span-1 col-start-1 col-span-full flex justify-center text-7xl md:text-9xl inter-extralight">
                     Leadership
                 </div>
-                <div className="row-start-2 row-span-full col-start-1 col-span-full mt-20 grid grid-cols-2 grid-rows-2">
+                <div className="row-start-1 gap-7 md:gap-0 md:row-start-2 row-span-full col-start-1 col-span-full mt-20 grid grid-col-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2">
                     <Image className="row-start-1 col-start-1 col-span-full row-start-full" src={LeadershipBackgroundLarge} alt="big background leaderhip" />
                     <PersonBox
                         className="col-start-1 col-span-1 row-start-1 row-span-1"
@@ -51,21 +51,21 @@ export default async function MemberPage() {
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     />
                     <PersonBox
-                        className="col-start-2 col-span-1 row-start-1 row-span-1"
+                        className="col-start-1 col-span-1 row-start-2 row-span-1 md:col-start-2 md:col-span-1 md:row-start-1 md:row-span-1"
                         name="Doge Dogecoin"
                         position="Co-President"
                         image={DogeBoy}
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     />
                     <PersonBox
-                        className="col-start-1 col-span-1 row-start-2 row-span-1"
+                        className="col-start-1 col-span-1 row-start-3 row-span-1 md:col-start-1 md:col-span-1 md:row-start-2 md:row-span-1"
                         name="Doge Dogecoin"
                         position="Co-President"
                         image={DogeBoy}
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     />
                     <PersonBox
-                        className="col-start-2 col-span-1 row-start-2 row-span-1"
+                        className="col-start-1 col-span-1 row-start-4 row-span-1 md:col-start-2 md:col-span-1 md:row-start-2 md:row-span-1"
                         name="Doge Dogecoin"
                         position="Co-President"
                         image={DogeBoy}
@@ -73,7 +73,7 @@ export default async function MemberPage() {
                     />
                 </div>
             </div>
-            <div className="flex justify-center text-9xl inter-extralight">
+            <div className="flex justify-center text-7xl md:text-9xl inter-extralight">
                 Departments
             </div>
 
