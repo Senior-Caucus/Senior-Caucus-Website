@@ -6,8 +6,6 @@ import Image2Left from "public/images/ResourceImageLeft2.png";
 import Image1Right from "public/images/ResourceImageRight1.png";
 import Image2Right from "public/images/ResourceImageRight2.png";
 import MobileResourceHero from "public/images/MobileResourceHero.svg";
-import Doge from "public/images/DogeBoy.png"
-import findOutArrow from "public/images/FindOutArrow.svg"
 import Resource from "@/components/Resource";
 import { getResources } from "@/actions/googleSheetsActions";
 import { Suspense } from "react";

@@ -10,12 +10,11 @@ export async function getMemberData(sheetID: string) {
   const range = "A2:D200";
 
   const response = await sheets.spreadsheets.values.get({
-    spreadsheetId: process.env.SHEET_ID, 
+    spreadsheetId: process.env.SHEET_ID,
     range: sheetID.trim() + "!" + range,
   });
   return response.data.values;
 }
-
 
 export async function getNamefromAA(sheetID: string) {
   const auth = await google.auth.getClient({
@@ -26,7 +25,7 @@ export async function getNamefromAA(sheetID: string) {
   const range = "A1";
 
   const response = await sheets.spreadsheets.values.get({
-    spreadsheetId: process.env.SHEET_ID, 
+    spreadsheetId: process.env.SHEET_ID,
     range: sheetID.trim() + "!" + range,
   });
   return response.data.values;
@@ -40,7 +39,7 @@ export async function getResources() {
   const range = "A2:C200";
 
   const response = await sheets.spreadsheets.values.get({
-    spreadsheetId: process.env.RESOURCES_SHEET_ID, 
+    spreadsheetId: process.env.RESOURCES_SHEET_ID,
     range: range,
   });
   return response.data.values;
