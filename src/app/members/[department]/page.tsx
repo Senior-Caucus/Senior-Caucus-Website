@@ -76,8 +76,8 @@ async function DepartmentPageLoaded(props: DepartmentPageProps) {
 
 
     return (<div className="min-h-screen w-screen relative">
-        <Image className="invisible md:visible absolute left-0 right-0 w-full h-full object-cover" src={DepartmentBackgroundLarge} alt="department background" />
-        <Image className="visible md:invisible absolute left-0 right-0 w-full h-full object-cover" src={DepartmentBackgroundSmall} alt="small department background" />
+        <Image className="invisible md:visible absolute left-0 right-0 w-full h-full object-cover -z-50" src={DepartmentBackgroundLarge} alt="department background" />
+        <Image className="visible md:invisible absolute left-0 right-0 w-full h-full object-cover -z-50" src={DepartmentBackgroundSmall} alt="small department background" />
         <div className="inter-extralight w-screen text-center text-6xl md:text-7xl">
             {name[0][0]}
         </div>
@@ -104,10 +104,10 @@ async function DepartmentPageLoaded(props: DepartmentPageProps) {
             Members
         </div>
         <div className="w-screen h-10" />
-        <div className="flex flex-wrap flex-row h-auto w-lvw -mr-10">
+        <div className="flex flex-wrap flex-row h-auto w-lvw -mr-10 -z-10">
             {memberInfo.map((element, index) => (
                 <PersonBox
-                    className="w-[calc(31rem)] h-[15rem] mt-10 sm:mt-0"
+                    className="w-[calc(31rem)] h-[15rem] mt-10 sm:mt-0 -z-10"
                     key={index}
                     name={element[0]}
                     position={element[1]}
