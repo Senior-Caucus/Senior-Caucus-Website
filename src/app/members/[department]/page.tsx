@@ -48,7 +48,7 @@ export default async function DepartmentPage(props: DepartmentPageProps) {
         <div className="flex flex-wrap flex-row h-auto">
             {directorInfo.map((element, index) => (
                 <PersonBox
-                    className="w-[35rem] h-[15rem]"
+                    className="w-[32rem] h-[15rem]"
                     key={index}
                     name={element[0]}
                     position={element[1]}
@@ -63,10 +63,10 @@ export default async function DepartmentPage(props: DepartmentPageProps) {
             Members
         </div>
         <div className="w-screen h-10" />
-        <div className="flex flex-wrap flex-row h-fit gap-10">
+        <div className="flex flex-wrap flex-row h-fit">
             {memberInfo.map((element, index) => (
                 <PersonBox
-                    className="w-[35rem] h-[15rem]"
+                    className="w-[calc(15rem+26vw+10px)] h-[15rem]"
                     key={index}
                     name={element[0]}
                     position={element[1]}
