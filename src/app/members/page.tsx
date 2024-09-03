@@ -12,7 +12,6 @@ import DogeBoy from "public/images/DogeBoy.png";
 import DepartmentSection from "@/components/DepartmentSection";
 
 import DepartmentBackgrounds from "public/images/DepartmentBackgrounds.svg";
-import { google } from "googleapis";
 
 export default async function MemberPage() {
 

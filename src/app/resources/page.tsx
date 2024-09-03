@@ -8,8 +8,14 @@ import Image2Right from "public/images/ResourceImageRight2.png";
 import MobileResourceHero from "public/images/MobileResourceHero.svg";
 import Doge from "public/images/DogeBoy.png"
 import findOutArrow from "public/images/FindOutArrow.svg"
+import Resource from "@/components/Resource";
+import { getResources } from "@/actions/googleSheetsActions";
+import { Suspense } from "react";
 
-export default function ResourcesPage() {
+export default async function ResourcesPage() {
+
+
+
     return (<div>
         <div className="grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)] w-lvw overflow-hidden">
             <Image className="visible md:invisible col-start-1 row-start-1 col-span-full row-span-full m-4 " src={MobileResourceHero} alt="mobile resource background" />
@@ -34,47 +40,42 @@ export default function ResourcesPage() {
                 Resources
             </div>
         </div>
-        <div className="w-screen min-h-{50vh}">
-            <div className="grid p-10">
-                <div className="grid grid-cols-1 gap-10 md:grid-cols-[1.5fr_3fr] md:items-start pb-10 md:pl-10 md:pr-10 pl-5 pr-5 pb-20">
-                    <div className="resourceNameContainer h-full flex md:justify-center p-0">
-                        <div className="h-fit text-4xl md:text-6xl inter-regular p-0">Resource Name</div>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <p className="inter-extralight text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <div className="transition-transform hover:translate-x-1 cursor-pointer">
-                            <a href="link-to-item-1" className="inter-bold underline">Link To Item 1</a>
-                            <Image alt="arrow to find out more" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" className="inline-block ml-1 w-6 h-6 " src={findOutArrow} />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="grid grid-cols-1 gap-10 md:grid-cols-[1.5fr_3fr] md:items-start pb-10 md:pl-10 md:pr-10 pl-5 pr-5 pb-20">
-                    <div className="resourceNameContainer h-full flex md:justify-center">
-                        <div className="h-fit text-4xl md:text-6xl inter-regular">Resource Name</div>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <p className="inter-extralight text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <div className="transition-transform hover:translate-x-1 cursor-pointer">
-                            <a href="link-to-item-1" className="inter-bold underline">Link To Item 2</a>
-                            <Image alt="arrow to find out more" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" className="inline-block ml-1 w-6 h-6 " src={findOutArrow} />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="grid grid-cols-1 gap-10 md:grid-cols-[1.5fr_3fr] md:items-start pb-10 md:pl-10 md:pr-10 pl-5 pr-5 pb-20">
-                    <div className="resourceNameContainer h-full flex md:justify-center">
-                        <div className="h-fit text-4xl md:text-6xl inter-regular">Resource Name</div>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <p className="inter-extralight text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <div className="transition-transform hover:translate-x-1 cursor-pointer">
-                            <a href="link-to-item-1" className="inter-bold underline">Link To Item 3</a>
-                            <Image alt="arrow to find out more" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" className="inline-block ml-1 w-6 h-6 " src={findOutArrow} />
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div className="w-screen min-h-[75vh]">
+            <Suspense fallback={<div className="h-[50%]"><LoadingSpinner /></div>}>
+                <ResourceList />
+            </Suspense>
         </div>
     </div>);
+}
+
+async function ResourceList() {
+    const resourceresp = await getResources();
+    let resourcesList: string[][] = []
+    if (resourceresp !== null && resourceresp !== undefined) {
+        resourcesList = resourceresp;
+    }
+    return (
+        <div className="grid p-10">
+            {
+                resourcesList.map((resource, index) => (
+                    <Resource className="mt-10" key={index} name={resource[0]} description={resource[1]} link={resource[2]} />
+                ))
+            }
+        </div>
+    );
+}
+
+function LoadingSpinner() {
+    return (<div className="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
+        <svg className="w-16 h-16 animate-spin text-gray-900/50" viewBox="0 0 64 64" fill="none"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path
+                d="M32 3C35.8083 3 39.5794 3.75011 43.0978 5.20749C46.6163 6.66488 49.8132 8.80101 52.5061 11.4939C55.199 14.1868 57.3351 17.3837 58.7925 20.9022C60.2499 24.4206 61 28.1917 61 32C61 35.8083 60.2499 39.5794 58.7925 43.0978C57.3351 46.6163 55.199 49.8132 52.5061 52.5061C49.8132 55.199 46.6163 57.3351 43.0978 58.7925C39.5794 60.2499 35.8083 61 32 61C28.1917 61 24.4206 60.2499 20.9022 58.7925C17.3837 57.3351 14.1868 55.199 11.4939 52.5061C8.801 49.8132 6.66487 46.6163 5.20749 43.0978C3.7501 39.5794 3 35.8083 3 32C3 28.1917 3.75011 24.4206 5.2075 20.9022C6.66489 17.3837 8.80101 14.1868 11.4939 11.4939C14.1868 8.80099 17.3838 6.66487 20.9022 5.20749C24.4206 3.7501 28.1917 3 32 3L32 3Z"
+                stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path
+                d="M32 3C36.5778 3 41.0906 4.08374 45.1692 6.16256C49.2477 8.24138 52.7762 11.2562 55.466 14.9605C58.1558 18.6647 59.9304 22.9531 60.6448 27.4748C61.3591 31.9965 60.9928 36.6232 59.5759 40.9762"
+                stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" className="text-gray-900">
+            </path>
+        </svg>
+    </div>)
 }

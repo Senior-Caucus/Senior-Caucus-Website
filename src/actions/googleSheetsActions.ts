@@ -31,3 +31,17 @@ export async function getNamefromAA(sheetID: string) {
   });
   return response.data.values;
 }
+
+export async function getResources() {
+  const auth = await google.auth.getClient({
+    scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
+  });
+  const sheets = google.sheets({ version: "v4", auth });
+  const range = "A2:C200";
+
+  const response = await sheets.spreadsheets.values.get({
+    spreadsheetId: process.env.RESOURCES_SHEET_ID, 
+    range: range,
+  });
+  return response.data.values;
+}
