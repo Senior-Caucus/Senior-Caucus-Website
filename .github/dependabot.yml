@@ -14,6 +14,4 @@ updates:
       - "your-github-username" # Adds reviewers to the pull request
     labels:
       - "dependencies" # Adds a "dependencies" label to the pull requests
-    ignore:
-      # - dependency-name: "some-package" # Optional: Add specific dependencies to ignore
-      #   versions: ["1.x"] # Optional: Ignore updates to specific versions
+
