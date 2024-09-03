@@ -8,7 +8,6 @@ export async function getMemberData(sheetID: string) {
 
   const sheets = google.sheets({ version: "v4", auth });
   const range = "A2:D200";
-  console.log(process.env.SHEET_ID);
 
   const response = await sheets.spreadsheets.values.get({
     spreadsheetId: process.env.SHEET_ID, 
@@ -25,7 +24,6 @@ export async function getNamefromAA(sheetID: string) {
 
   const sheets = google.sheets({ version: "v4", auth });
   const range = "A1";
-  console.log(process.env.SHEET_ID);
 
   const response = await sheets.spreadsheets.values.get({
     spreadsheetId: process.env.SHEET_ID, 

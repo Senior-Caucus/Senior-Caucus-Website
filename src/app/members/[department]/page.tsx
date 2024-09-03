@@ -62,7 +62,6 @@ async function DepartmentPageLoaded(props: DepartmentPageProps) {
     }
     else {
         for (const element of data) {
-            console.log((element[1] as String));
             if ((element[1] as String).toLowerCase().includes("director")) {
                 directorInfo.push(element);
             } else {
@@ -75,8 +74,6 @@ async function DepartmentPageLoaded(props: DepartmentPageProps) {
     const nameresp = await getNamefromAA(props.params.department);
     name = (nameresp !== undefined && nameresp !== null ? nameresp : name);
 
-
-    console.log(name[0][0]);
 
     return (<div className="min-h-screen w-screen relative">
         <Image className="invisible md:visible absolute left-0 right-0 w-full h-full object-cover" src={DepartmentBackgroundLarge} alt="department background" />
