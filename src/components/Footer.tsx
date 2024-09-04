@@ -10,7 +10,7 @@ import footerBigBackground from "public/images/FooterBigBackground.svg"
 
 export default async function Footer() {
     return (<div className="z-50 w-screen h-80 grid grid-cols-12 grid-rows-12">
-        <Image className="w-fit h-fit col-start-2 row-start-2 row-span-10 col-span-10 lg:col-start-4 lg:row-start-4 lg:col-span-7 lg:row-span-4" src={footerBigBackground} alt="footer background with big size" />
+        <Image className="select-none pointer-events-none w-fit h-fit col-start-2 row-start-2 row-span-10 col-span-10 lg:col-start-4 lg:row-start-4 lg:col-span-7 lg:row-span-4" src={footerBigBackground} alt="footer background with big size" />
         <div className=" col-start-2 col-span-9 sm:col-start-4 sm:col-span-5 lg:col-start-5 lg:col-span-4 justify-between row-start-1 row-span-1 flex flex-row w-fill h-fill">
             <a href="https://google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
                 <Image className="w-10 h-10" src={ticktoklogo} alt="ticktok logo" />

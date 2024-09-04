@@ -22,7 +22,7 @@ export default async function EventsPage() {
         <div>
             <div className="grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)] w-lvw">
                 <Image className="visible md:invisible row-start-2 col-start-1 col-span-8 row-span-10 sm:row-start-2 sm:col-start-1 sm:col-span-6 sm:row-span-10 m-3" src={MobileEventsHero} alt="background for events page small " />
-                <Image className="invisible md:visible row-start-4 col-start-2 col-span-9 row-span-full lg:row-start-1 lg:col-start-1 lg:col-span-11 lg:row-span-11 m-3" src={EventsHeroBackgroundLarge} alt="background for events page" />
+                <Image className="select-none pointer-events-none invisible md:visible row-start-4 col-start-2 col-span-9 row-span-full lg:row-start-1 lg:col-start-1 lg:col-span-11 lg:row-span-11 m-3" src={EventsHeroBackgroundLarge} alt="background for events page" />
                 <Image className="visible md:invisible row-start-2 row-span-10 col-start-3 col-span-9 sm:col-start-3 sm:row-start-2 sm:row-span-10 sm:col-span-6  rounded-md" src={MobileHomeBattle} alt="homecoming picture + battle" />
                 <Image className="invisible md:visible row-start-2 row-span-10 col-start-2 col-span-11 lg:row-start-2 lg:ow-span-10 lg:col-start-3 lg:col-span-9" src={HomeBattle} alt="homecoming picture + battle" />
                 <div className="inter-extralight row-start-10 row-span-2 col-start-1 col-span-1 ml-4 text-9xl italic">

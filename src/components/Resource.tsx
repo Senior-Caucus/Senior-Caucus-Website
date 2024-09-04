@@ -10,7 +10,6 @@ interface ResourceProps {
 }
 
 export default async function Resource(props: ResourceProps) {
-
     return (
         <div className={`${props.className}`}>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[1.5fr_3fr] md:items-start md:pl-10 md:pr-10 pl-5 pr-5">

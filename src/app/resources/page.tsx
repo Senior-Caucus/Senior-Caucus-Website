@@ -14,8 +14,8 @@ export default async function ResourcesPage() {
     return (<div>
         <div className="grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)] w-lvw overflow-hidden">
             <Image className="visible md:invisible col-start-1 row-start-1 col-span-full row-span-full m-4 " src={MobileResourceHero} alt="mobile resource background" />
-            <Image className="invisible md:visible col-start-1 row-start-1 col-span-6 row-span-full m-4" src={ResourceLeftBackgroundLarge} alt="background image for resources page (large)" />
-            <Image className="invisible md:visible col-start-9 row-start-1 col-span-full row-span-4 ml-12" src={ResourceRightBackgroundLarge} alt="background for resource image large" />
+            <Image className="select-none pointer-events-none invisible md:visible col-start-1 row-start-1 col-span-6 row-span-full m-4" src={ResourceLeftBackgroundLarge} alt="background image for resources page (large)" />
+            <Image className="select-none pointer-events-none invisible md:visible col-start-9 row-start-1 col-span-full row-span-4 ml-12" src={ResourceRightBackgroundLarge} alt="background for resource image large" />
             <div className="arrow-down absolute bottom-4 left-1/2 transform -translate-x-1/2 mt-4 flex">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

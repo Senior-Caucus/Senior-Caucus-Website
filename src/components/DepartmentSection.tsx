@@ -48,7 +48,7 @@ export default async function DepartmentSection(props: DepartmentSectionProps) {
             <div className="row-start-12 md:row-start-11 col-start-4 sm:col-start-1 col-span-full row-span-1 bold ml-3 mt-6 transition-transform hover:translate-x-10 md:hover:translate-x-1 ">
                 <Link href={`/members/${props.departmentLink.trim()}`} className="">
                     <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
-                    <Image src={findOutArrow} alt="arrow to find out more" className="inline-block ml-1 w-6 h-6" />
+                    <Image src={findOutArrow} alt="arrow to find out more" className="select-none pointer-events-none inline-block ml-1 w-6 h-6" />
                 </Link>
             </div>
         </div>

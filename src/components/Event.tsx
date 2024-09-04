@@ -14,7 +14,7 @@ interface EventProps {
 export default async function Event(props:EventProps) {
     return (
         <div className="flex flex-col flex-nowrap w-60 h-auto m-4">
-            <Image className="rounded-lg" src={props.image} alt="resource image" width={300} height={300} />
+            <Image loading="lazy" className="rounded-lg" src={props.image} alt="resource image" width={300} height={300} />
             <div className="inter-extralight text-3xl text-left italic">{props.name}</div>
             <div className="inter-extralight text-sm text-left inter-extralight">{props.date}</div>
             <div className="">{props.description}</div>
