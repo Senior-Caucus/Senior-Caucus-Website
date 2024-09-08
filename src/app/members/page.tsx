@@ -30,7 +30,7 @@ export default async function MemberPage() {
                     viewBox="0 0 24 24"
                     strokeWidth="2"
                     stroke="black"
-                    className="w-8 h-8 animate-bounce">
+                    className="w-8 h-8 animate-bounce hover:animate-none hover:scale-x-110 hover:h-10 hover:w-10">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
             </div>

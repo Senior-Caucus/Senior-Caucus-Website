@@ -20,21 +20,24 @@ export default async function HomeHero() {
                             <h2 className="drop-shadow-lg text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[7.9375rem] text-black inter-semibold text-right">
                                 Stuyvesant
                             </h2>
-                            <h2 className="drop-shadow-lg text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[7.9375rem] text-black inter-extralight text-right">
+                            <h2 id="downarrowtarget" className="drop-shadow-lg text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[7.9375rem] text-black inter-extralight text-right">
                                 Senior Caucus
                             </h2>
                         </div>
                     </div>
                     <div className="arrow-down absolute bottom-4 left-1/2 transform -translate-x-1/2 mt-4 flex">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="2"
-                            stroke="black"
-                            className="w-8 h-8 animate-bounce">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                        </svg>
+                        <a href="#downarrowtarget">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth="2"
+                                stroke="black"
+                                className="w-8 h-8 animate-bounce hover:animate-none hover:scale-x-110 hover:h-10 hover:w-10"
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div></>

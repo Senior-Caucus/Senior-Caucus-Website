@@ -21,7 +21,7 @@ import EventsSectionBackgroundSmall from 'public/images/EventsSectionBackgroundS
 
 export default async function Home() {
   return (
-    <div>
+    <div className="scroll-smooth">
       <HomeHero />
 
       <div className="w-screen h-screen grid-cols-12 grid-rows-12 grid overflow-x-hidden overflow-y-hidden">
