@@ -4,26 +4,29 @@ import ticktoklogo from "public/images/tiktoklogo.svg";
 import instalogo from "public/images/instalogo.svg";
 import facebooklogo from "public/images/facebooklogo.svg";
 import sulogo from "public/images/sulogo.svg";
-import AttributionFooter from "public/images/AttributionFooter.png"
+import AttributionFooter from "public/images/AttributionFooter.png";
 
-import footerBigBackground from "public/images/FooterBigBackground.svg"
+import footerBigBackground from "public/images/FooterBigBackground.svg";
+import Linktree from "public/images/Linktree.png";
 
 export default async function Footer() {
     return (<div className="z-50 w-screen h-80 grid grid-cols-12 grid-rows-12">
         <Image className="select-none pointer-events-none w-fit h-fit col-start-2 row-start-2 row-span-10 col-span-10 lg:col-start-4 lg:row-start-4 lg:col-span-7 lg:row-span-4" src={footerBigBackground} alt="footer background with big size" />
         <div className=" col-start-2 col-span-9 sm:col-start-4 sm:col-span-5 lg:col-start-5 lg:col-span-4 justify-between row-start-1 row-span-1 flex flex-row w-fill h-fill">
-            <a href="https://google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <a href="https://tiktok.com/@stuyseniorcaucus" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
                 <Image className="w-10 h-10" src={ticktoklogo} alt="ticktok logo" />
-
             </a>
-            <a href="https://google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <a href="https://www.instagram.com/stuyseniorcaucus" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
                 <Image className="w-10 h-10" src={instalogo} alt="instagram logo" />
             </a>
-            <a href="https://google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <a href="https://www.facebook.com/groups/stuyclass2025" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
                 <Image className="w-10 h-10" src={facebooklogo} alt="facebook logo" />
             </a>
-            <a href="https://google.com" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <a href="https://www.stuysu.org/" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
                 <Image className="w-10 h-10" src={sulogo} alt="su logo" />
+            </a>
+        <a href="https://linktr.ee/seniorcaucus" className="transition-transform hover:scale-105 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                <Image className="w-10 h-10" src={Linktree} alt="linktree logo" />
             </a>
         </div>
         <div className="row-start-4 row-span-1 col-start-1 col-span-full text-1xl flex justify-center">
