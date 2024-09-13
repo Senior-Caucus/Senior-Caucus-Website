@@ -13,6 +13,9 @@ import DepartmentSection from "@/components/DepartmentSection";
 
 import DepartmentBackgrounds from "public/images/DepartmentBackgrounds.svg";
 
+import JosephineYoo from "public/images/JosephineYoo.png"
+import JohnJay from "public/images/JohnJay.png";
+
 export default async function MemberPage() {
 
     return (<div>
@@ -49,10 +52,10 @@ export default async function MemberPage() {
                     <Image className="row-start-1 col-start-1 col-span-full row-start-full" src={LeadershipBackgroundLarge} alt="big background leaderhip" />
                     <PersonBox
                         className="col-start-1 col-span-1 row-start-1 row-span-1"
-                        name="Doge Dogecoin"
+                        name="Josephine Yoo"
                         position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        image={JosephineYoo}
+                        description="Hey guys! I’m Josephine, and I’m super excited to be Senior Caucus Co-President alongside Grace this year. I love to try new coffees, read, and go on runs in my free time. I look forward to working with everyone to make our last year as fun and memorable as possible!"
                     />
                     <PersonBox
                         className="col-start-1 col-span-1 row-start-2 row-span-1 md:col-start-2 md:col-span-1 md:row-start-1 md:row-span-1"
@@ -63,10 +66,10 @@ export default async function MemberPage() {
                     />
                     <PersonBox
                         className="col-start-1 col-span-1 row-start-3 row-span-1 md:col-start-1 md:col-span-1 md:row-start-2 md:row-span-1"
-                        name="Doge Dogecoin"
-                        position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        name="John Jay Wang"
+                        position="Chief of Staff"
+                        image={JohnJay}
+                        description="Hi! My name is John Jay Wang, and I am serving as your Chief of Staff. In school, you can find me on the tennis courts, music room, and SU room, but out of school, you can find me listening to music, going on runs, and playing my instruments. Super excited for an amazing senior year!"
                     />
                     <PersonBox
                         className="col-start-1 col-span-1 row-start-4 row-span-1 md:col-start-2 md:col-span-1 md:row-start-2 md:row-span-1"
@@ -209,7 +212,7 @@ export default async function MemberPage() {
                     className="col-start-1 col-span-1 row-start-6 row-span-1"
                     departmentName="Social Media"
                     departmentLink="socialmedia"
-                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    departmentDescription="Senior Caucus' Social Media department is responsible for running the Instagram, TikTok, and any other forms of promotion/representation. Look forward to some of our projects this year, such as our Senior Superlatives Spotlight and the StuyGrad page!"
                     director1info={
                         {
                             directorName: "Doge Dogecoin",
