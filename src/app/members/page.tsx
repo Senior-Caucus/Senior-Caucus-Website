@@ -112,7 +112,7 @@ export default async function MemberPage() {
                     className="col-start-1 col-span-1 row-start-2 row-span-1"
                     departmentName="Graphics"
                     departmentLink="graphics"
-                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    departmentDescription="The Graphics Department’s primary goal is to create engaging and accessible social media posts that promote the Caucus’s events, fundraisers, and resources to the student body. Its scope, however, extends beyond this, and any and all project ideas are welcomed."
                     director1info={
                         {
                             directorName: "Doge Dogecoin",
