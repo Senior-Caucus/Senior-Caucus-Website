@@ -16,6 +16,21 @@ import DepartmentBackgrounds from "public/images/DepartmentBackgrounds.svg";
 import JosephineYoo from "public/images/JosephineYoo.png"
 import JohnJay from "public/images/JohnJay.png";
 
+import SkyeMcArthur from "public/images/SkyeMcArthur.png";
+import EmilyLi from "public/images/EmilyLi.png";
+
+import ChenmingFang from "public/images/ChenmingFang.png";
+
+import JosephineGunawan from "public/images/JosephineGunawan.png";
+
+import EliasXu from "public/images/EliasXu.png";
+import OtzarJaffe from "public/images/OtzarJaffe.png";
+
+
+
+import ChloeWong from "public/images/ChloeWong.png";
+
+
 export default async function MemberPage() {
 
     return (<div>
@@ -94,18 +109,18 @@ export default async function MemberPage() {
                     departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     director1info={
                         {
-                            directorName: "Doge Dogecoin",
+                            directorName: "Emily Li",
                             position: "Events Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            image: EmilyLi,
+                            description: "Hi, my name is Emily. I’m very excited to be one of your events co-director once again! I love planning events, cafe-hopping, eating out and discovering new artists."
                         }
                     }
                     director2info={
                         {
-                            directorName: "Doge Dogecoin",
+                            directorName: "Skye McArthur",
                             position: "Events Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            image: SkyeMcArthur,
+                            description: "Hi, I am Skye, and I'm so excited to be Co-Director of Events with Emily. I was a member of the committee last year, and I'm excited to take on more responsibility this year and help plan some more amazing events, including our senior prom."
                         }
                     }
                 />
@@ -125,12 +140,7 @@ export default async function MemberPage() {
                         }
                     }
                     director2info={
-                        {
-                            directorName: "Doge Dogecoin",
-                            position: "Graphics Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                        }
+                        null
                     }
                 />
 
@@ -167,19 +177,14 @@ export default async function MemberPage() {
                     departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     director1info={
                         {
-                            directorName: "Doge Dogecoin",
+                            directorName: "Chenming Fang",
                             position: "Externals Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            image: ChenmingFang,
+                            description: "Hi, I'm Chenming. I love running, gaming, and listening to English and Chinese music. I am excited to lead the Internals Department again this year! We know college application is stressful, and our team is here to make this process easier for everyone."
                         }
                     }
                     director2info={
-                        {
-                            directorName: "Doge Dogecoin",
-                            position: "Externals Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                        }
+                        null
                     }
                 />
 
@@ -191,7 +196,7 @@ export default async function MemberPage() {
                     departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     director1info={
                         {
-                            directorName: "Doge Dogecoin",
+                            directorName: "Elias Xu",
                             position: "I/T Director",
                             image: DogeBoy,
                             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -199,7 +204,7 @@ export default async function MemberPage() {
                     }
                     director2info={
                         {
-                            directorName: "Doge Dogecoin",
+                            directorName: "Otzar Jaffe",
                             position: "I/T Director",
                             image: DogeBoy,
                             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
