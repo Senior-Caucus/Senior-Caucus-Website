@@ -90,7 +90,7 @@ export default async function Home() {
         <Image className="row-start-1 mt-10 col-start-2 col-span-9  md:col-start-6 md:col-span-6 row-span-full w-full h-auto" src={RecDefault} alt="Resources image" />
         <div className='col-start-1 row-start-1 row-span-1 col-span-full inter-extralight text-7xl sm:text-8xl'>Events</div>
         <div className='row-start-6 row-span-full col-start-1 col-span-full md:col-start-1 md:col-span-7 md:row-start-3 ml-10 md:rows-span-6 inter-extralight text-2xl mr-2'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          The Events Department is responsible for planning and arranging events inside and outside of Stuy to promote school community and engagement. Possible events we look forward to hosting this year include Senior Field Day, slime events, and a movie night. We will also be organizing Senior Prom and hosting fundraisers throughout the year, such as bake sales, to lower costs of tickets for everyone.
           <br />
           <div className='transition-transform hover:translate-x-1'>
 
