@@ -28,9 +28,9 @@ export default async function DepartmentSection(props: DepartmentSectionProps) {
             <div className="text-1xl inter-extralight row-start-2 md:row-start-3 md:row-span-1 md:col-start-1 md:col-span-full col-start-1 col-span-full row-span-1 ml-3 mt-4 ">
                 {props.departmentDescription}
             </div>
-            <div className={`col-start-1 row-start-4 sm:row-start-4 md:row-start-5 md:ml-4 md:row-span-6 md:col-start-1 md:col-span-full lg:row-start-5 lg:row-span-6 lg:col-start-1 row-span-full col-span-5 lg:col-span-6 grid grid-cols-1 ${props.director2info === null ?`grid-rows-1`: `grid-rows-2`}  md:grid-cols-2 md:grid-rows-1 w-screen h-auto mt-6 sm:mt-2 lg:-mt-2 -ml-1`}>
+            <div className={`col-start-1 row-start-4 sm:row-start-4 md:row-start-5 md:ml-4 md:row-span-6 md:col-start-1 md:col-span-full lg:row-start-5 lg:row-span-6 lg:col-start-1 ${props.director2info === null ? "row-span-5": "row-span-full"} col-span-5 lg:col-span-6 grid grid-cols-1 ${props.director2info !== null ?`grid-rows-2`: `grid-rows-1`}  md:grid-cols-2 md:grid-rows-1 w-screen "h-auto" mt-6 sm:mt-2 lg:-mt-2 -ml-1`}>
                 <PersonBox
-                    className="md:-ml-11 col-start-1 col-span-1 row-start-1 row-span-1 md:col-start-1 md:col-span-1 md:row-start-1 md:row-span-1"
+                    className="md:-ml-11 col-start-1 col-span-1 row-start-1 row-span-1"
                     name={props.director1info.directorName}
                     position={props.director1info.position}
                     image={props.director1info.image}
@@ -45,7 +45,7 @@ export default async function DepartmentSection(props: DepartmentSectionProps) {
                         description={props.director2info.description}
                     />}
             </div>
-            <div className="row-start-12 md:row-start-11 col-start-4 sm:col-start-1 col-span-full row-span-1 bold ml-3 mt-6 transition-transform hover:translate-x-10 md:hover:translate-x-1 ">
+            <div className={`${props.director2info === null ? "row-start-8": "row-start-12"} md:row-start-11 col-start-4 sm:col-start-1 col-span-full row-span-1 bold ml-3 mt-6 transition-transform hover:translate-x-10 md:hover:translate-x-1`}>
                 <Link href={`/members/${props.departmentLink.trim()}`} className="">
                     <div className='underline underline-offset-1 cursor-pointer inter-bold inline-block'>Check out more</div>
                     <Image src={findOutArrow} alt="arrow to find out more" className="select-none pointer-events-none inline-block ml-1 w-6 h-6" />

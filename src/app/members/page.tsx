@@ -27,9 +27,13 @@ import EliasXu from "public/images/EliasXu.png";
 import OtzarJaffe from "public/images/OtzarJaffe.png";
 
 
-
 import ChloeWong from "public/images/ChloeWong.png";
 
+
+import MaeganDiep from "public/images/MaeganDiep.png";
+import RayenZhou from "public/images/RayenZhou.png";
+import SuhanaKumar from "public/images/SuhanaKumar.png"
+import VitaKirschtein from "public/images/VitaKirschtein.png"
 
 export default async function MemberPage() {
 
@@ -56,13 +60,13 @@ export default async function MemberPage() {
         <div className="h-10" />
         <div className="min-h-[50vh] w-screen">
             {/* leadership section (head honchos) */}
-            <div className="w-screen h-10"/>
+            <div className="w-screen h-10" />
 
             <div className="w-screen h-[140vh] md:h-screen grid grid-col-12 grid-rows-12">
                 <div className="row-start-1 row-span-1 col-start-1 col-span-full flex justify-center text-7xl md:text-9xl inter-extralight">
                     Leadership
                 </div>
-                <div className="w-screen h-10"/>
+                <div className="w-screen h-10" />
                 <div className="row-start-1 gap-7 md:gap-0 md:row-start-2 row-span-full col-start-1 col-span-full mt-20 grid grid-col-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2">
                     <Image className="row-start-1 col-start-1 col-span-full row-start-full" src={LeadershipBackgroundLarge} alt="big background leaderhip" />
                     <PersonBox
@@ -98,7 +102,7 @@ export default async function MemberPage() {
             <div className="flex justify-center text-7xl md:text-9xl inter-extralight">
                 Departments
             </div>
-            <div className="w-screen h-10"/>
+            <div className="w-screen h-10" />
             {/* Events */}
             <div className="grid-cols-1 grid-rows-7 grid">
                 <Image className="col-start-1 col-span-1 row-start-1 row-span-full" src={DepartmentBackgrounds} alt="department backgrounds" />
@@ -133,10 +137,10 @@ export default async function MemberPage() {
                     departmentDescription="The Graphics Department’s primary goal is to create engaging and accessible social media posts that promote the Caucus’s events, fundraisers, and resources to the student body. Its scope, however, extends beyond this, and any and all project ideas are welcomed."
                     director1info={
                         {
-                            directorName: "Doge Dogecoin",
+                            directorName: "Chloe Wong",
                             position: "Graphics Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            image: ChloeWong,
+                            description: "Hello! My name is Chloe, and I'm so excited to be your caucus graphics director for one more year. I hope that my work proves itself worthy of your precious Instagram likes."
                         }
                     }
                     director2info={
@@ -152,19 +156,14 @@ export default async function MemberPage() {
                     departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     director1info={
                         {
-                            directorName: "Doge Dogecoin",
+                            directorName: "Josephine Gunawan",
                             position: "Internals Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            image: JosephineGunawan,
+                            description: "Hi, I'm Josephine, and I am so excited to be one of your Internals Directors this year! I love literature and history, but when I have free time, my favorite thing to do is bake pecan pie tarts. I am also the SU Director of External Affairs!"
                         }
                     }
                     director2info={
-                        {
-                            directorName: "Doge Dogecoin",
-                            position: "Internals Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                        }
+                        null
                     }
                 />
 
@@ -198,16 +197,16 @@ export default async function MemberPage() {
                         {
                             directorName: "Elias Xu",
                             position: "I/T Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            image: EliasXu,
+                            description: "Hello, my name is Elias! I'm a CS, boardgaming, beekeeping type of person :), and I can't wait to help run Caucus this year with my codirector Otzar."
                         }
                     }
                     director2info={
                         {
                             directorName: "Otzar Jaffe",
                             position: "I/T Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            image: OtzarJaffe,
+                            description: "Hi, I’m Otzar. I’m excited to be your I/T director this year! Right now, I’m interning at an AI security company where I help them train models. I also love baking banana bread, playing basketball, and reading books."
                         }
                     }
                 />
@@ -220,19 +219,14 @@ export default async function MemberPage() {
                     departmentDescription="Senior Caucus' Social Media department is responsible for running the Instagram, TikTok, and any other forms of promotion/representation. Look forward to some of our projects this year, such as our Senior Superlatives Spotlight and the StuyGrad page!"
                     director1info={
                         {
-                            directorName: "Doge Dogecoin",
+                            directorName: "Maegan Diep",
                             position: "Social Media Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            image: MaeganDiep,
+                            description: ""
                         }
                     }
                     director2info={
-                        {
-                            directorName: "Doge Dogecoin",
-                            position: "Social Media Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                        }
+                        null
                     }
                 />
 
@@ -244,19 +238,37 @@ export default async function MemberPage() {
                     departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     director1info={
                         {
-                            directorName: "Doge Dogecoin",
+                            directorName: "Vita Kirschtein",
                             position: "Media Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            image: VitaKirschtein,
+                            description: "Hi, I'm Vita, and I'm excited to be part of the cabinet this year, and to be documenting our experiences!"
                         }
                     }
                     director2info={
+                        null
+                    }
+                />
+
+                {/* media */}
+                <DepartmentSection
+                    className="col-start-1 col-span-1 row-start-8 row-span-1"
+                    departmentName="Finance"
+                    departmentLink="Finance"
+                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    director1info={
                         {
-                            directorName: "Doge Dogecoin",
-                            position: "Media Director",
-                            image: DogeBoy,
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            directorName: "Suhana Kumar",
+                            position: "Finance Director",
+                            image: SuhanaKumar,
+                            description: "Hi! I'm Suhana and I love Oreos, sewing and the summer season. I enjoy playing chess and being organized :) I'm super excited for the upcoming year!"
                         }
+                    }
+                    director2info={{
+                        directorName: "Rayen Zhou",
+                        position: "Finance Director",
+                        image: RayenZhou,
+                        description: "Rayen is eager to tackle the year ahead as Chief Financial Officer for the Senior Caucus. Having been in the Student Union for three years, he is excited to be apart of the Senior Caucus and hopes to make it as rewarding and impactful as possible."
+                    }
                     }
                 />
             </div>
