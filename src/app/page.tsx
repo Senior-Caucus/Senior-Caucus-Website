@@ -70,7 +70,7 @@ export default async function Home() {
         <Image className="col-start-1 row-start-2 ml-4 sm:col-start-2 sm:row-start-2 col-span-full sm:col-span-8 row-span-8 lg:col-start-6 lg:row-start-3 lg:col-span-6 lg:row-span-8" src={RecDefault} alt="Resources image" />
         <div className='sm:ml-2 col-start-1 row-start-1 col-span-full row-span-1 inter-extralight text-6xl sm:text-7xl md:text-8xl'>Resources</div>
         <div className='ml-2 sm:ml-14 text-2xl md:text-2xl col-start-1 row-start-7 sm:row-start-5 row-span-8 col-span-full md:col-start-1 md:row-start-8 md:col-span-10 md:row-span-4 lg:col-start-1 lg:row-start-3 lg:col-span-6 lg:row-span-6 inter-extralight mr-2'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Senior Caucus offers a variety of academic resources throughout the entire school year. Some of our projects include the College Data Organizer, the LAST newsletters, which offer glimpses into top colleges/universities through Stuy alumni, our scholarships compilations, the ongoing college workshop series with Y Tu También, and our course selection guides for each semester. Look out for more resources on college/career prep coming soon!
           <br />
           <div className="transition-transform hover:translate-x-1">
             <Link href="/resources" className="transition-transform hover:translate-x-1">

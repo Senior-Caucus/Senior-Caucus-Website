@@ -7,6 +7,9 @@ import MobileTeamHeroBackground from "public/images/TeamHeroMobileBackground.svg
 
 import LeadershipBackgroundLarge from "public/images/LeadershipLargeBackground.svg";
 import PersonBox from "@/components/PersonBox";
+
+import GraceRhee from "public/images/GraceRhee.png"
+
 import DogeBoy from "public/images/DogeBoy.png";
 
 import DepartmentSection from "@/components/DepartmentSection";
@@ -78,10 +81,10 @@ export default async function MemberPage() {
                     />
                     <PersonBox
                         className="col-start-1 col-span-1 row-start-2 row-span-1 md:col-start-2 md:col-span-1 md:row-start-1 md:row-span-1"
-                        name="Doge Dogecoin"
+                        name="Grace Rhee"
                         position="Co-President"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        image={GraceRhee}
+                        description="Hi, I’m Grace and I am very excited to be your Senior Caucus President during our last year at Stuy! I am especially excited for all of our senior year traditions and events such as Senior Sunset, the Senior Crush wall, Prom, and Graduation. I can’t wait to make lasting memories with everyone!"
                     />
                     <PersonBox
                         className="col-start-1 col-span-1 row-start-3 row-span-1 md:col-start-1 md:col-span-1 md:row-start-2 md:row-span-1"
@@ -93,7 +96,7 @@ export default async function MemberPage() {
                     <PersonBox
                         className="col-start-1 col-span-1 row-start-4 row-span-1 md:col-start-2 md:col-span-1 md:row-start-2 md:row-span-1"
                         name="Doge Dogecoin"
-                        position="Co-President"
+                        position="Chief of Staff"
                         image={DogeBoy}
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                     />
@@ -110,7 +113,7 @@ export default async function MemberPage() {
                     className="col-start-1 col-span-1 row-start-1 row-span-1"
                     departmentName="Events"
                     departmentLink="events"
-                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    departmentDescription="The Events Department is responsible for planning and arranging events inside and outside of Stuy to promote school community and engagement. Possible events we look forward to hosting this year include Senior Field Day, slime events, and a movie night. We will also be organizing and lowering costs for Senior Prom."
                     director1info={
                         {
                             directorName: "Emily Li",
@@ -153,7 +156,7 @@ export default async function MemberPage() {
                     className="col-start-1 col-span-1 row-start-3 row-span-1"
                     departmentName="Internals"
                     departmentLink="internals"
-                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    departmentDescription="The Internals Department manages and creates resources for the student body through extensive research and outreach, especially regarding college & career prep. Our usual projects include the LAST newsletters, internships & scholarships modules, course selection guides, and more."
                     director1info={
                         {
                             directorName: "Josephine Gunawan",
@@ -249,12 +252,12 @@ export default async function MemberPage() {
                     }
                 />
 
-                {/* media */}
+                {/* finance */}
                 <DepartmentSection
                     className="col-start-1 col-span-1 row-start-8 row-span-1"
                     departmentName="Finance"
                     departmentLink="Finance"
-                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    departmentDescription="The Finance Department is tasked with planning fundraisers, funding for Senior Prom and other grade-wide events, and all other senior caucus spending. Our goal is to ensure the senior caucus has the resources to keep hosting fun and engaging events for the entire Class of 2025."
                     director1info={
                         {
                             directorName: "Suhana Kumar",
