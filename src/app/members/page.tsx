@@ -175,7 +175,7 @@ export default async function MemberPage() {
                     className="col-start-1 col-span-1 row-start-4 row-span-1"
                     departmentName="Externals"
                     departmentLink="externals"
-                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    departmentDescription="The Externals Department is in charge of building connections with external partners. This includes planning college tours, interviewing college students and professionals for advice, organizing networking events, and reaching out to local businesses for Senior exclusive partnerships."
                     director1info={
                         {
                             directorName: "Chenming Fang",
