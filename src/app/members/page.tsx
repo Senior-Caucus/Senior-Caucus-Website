@@ -9,9 +9,6 @@ import LeadershipBackgroundLarge from "public/images/LeadershipLargeBackground.s
 import PersonBox from "@/components/PersonBox";
 
 import GraceRhee from "public/images/GraceRhee.png"
-
-import DogeBoy from "public/images/DogeBoy.png";
-
 import DepartmentSection from "@/components/DepartmentSection";
 
 import DepartmentBackgrounds from "public/images/DepartmentBackgrounds.svg";
@@ -28,6 +25,8 @@ import JosephineGunawan from "public/images/JosephineGunawan.png";
 
 import EliasXu from "public/images/EliasXu.png";
 import OtzarJaffe from "public/images/OtzarJaffe.png";
+
+import EthanSie from "public/images/EthanSie.png";
 
 
 import ChloeWong from "public/images/ChloeWong.png";
@@ -95,10 +94,10 @@ export default async function MemberPage() {
                     />
                     <PersonBox
                         className="col-start-1 col-span-1 row-start-4 row-span-1 md:col-start-2 md:col-span-1 md:row-start-2 md:row-span-1"
-                        name="Doge Dogecoin"
+                        name="Ethan Sie"
                         position="Chief of Staff"
-                        image={DogeBoy}
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        image={EthanSie}
+                        description="Hi everyone! I’m Ethan, and I’m back again alongside John Jay. In my free time, I’ll be binging a show or playing saxophone. I’m super excited for all the senior traditions we have planned, and together, we’re going to make the most of this year!"
                     />
                 </div>
             </div>
