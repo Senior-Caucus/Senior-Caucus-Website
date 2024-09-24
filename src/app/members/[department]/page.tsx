@@ -27,6 +27,7 @@ function LoadingDepartment(props: DepartmentPageProps) {
         "it": "I/T",
         "socialmedia": "Social Media",
         "media": "Media",
+        "finance": "Finance"
     };
 
     return (
@@ -40,13 +41,13 @@ function LoadingDepartment(props: DepartmentPageProps) {
             <div className="inter-bold w-screen text-center sm:text-left text-4xl sm:text-5xl mt-10 sm:mt-0">
                 Directors
             </div>
-            <div className="w-screen h-52 flex justify-center"> 
+            <div className="w-screen h-52 flex justify-center">
                 <LoadingSpinner />
             </div>
             <div className="inter-bold w-screen text-center sm:text-left text-4xl sm:text-5xl">
                 Members
             </div>
-            <div className="w-screen h-42 flex justify-center"> 
+            <div className="w-screen h-42 flex justify-center">
                 <LoadingSpinner />
             </div>
             <div className="w-screen h-28" />
@@ -104,22 +105,22 @@ async function DepartmentPageLoaded(props: DepartmentPageProps) {
         </div>
         <div className="w-screen h-20" />
 
-        <div className="inter-bold w-screen text-center sm:text-left text-4xl sm:text-5xl">
+        {memberInfo.length > 0 && <>    <div className="inter-bold w-screen text-center sm:text-left text-4xl sm:text-5xl">
             Members
         </div>
-        <div className="w-screen h-10" />
-        <div className="flex flex-wrap flex-row h-auto w-lvw -mr-10 -z-10">
-            {memberInfo.map((element, index) => (
-                <PersonBox
-                    className="w-[calc(31rem)] h-[15rem] mt-10 sm:mt-0 -z-10"
-                    key={index}
-                    name={element[0]}
-                    position={element[1]}
-                    image={element[2]}
-                    description={element[3]}
-                />
-            ))}
-        </div>
+            <div className="w-screen h-10" />
+            <div className="flex flex-wrap flex-row h-auto w-lvw -mr-10 -z-10">
+                {memberInfo.map((element, index) => (
+                    <PersonBox
+                        className="w-[calc(31rem)] h-[15rem] mt-10 sm:mt-0 -z-10"
+                        key={index}
+                        name={element[0]}
+                        position={element[1]}
+                        image={element[2]}
+                        description={element[3]}
+                    />
+                ))}
+            </div></>}
         <div className="w-screen h-28" />
     </div>);
 }

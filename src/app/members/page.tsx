@@ -255,7 +255,7 @@ export default async function MemberPage() {
                 <DepartmentSection
                     className="col-start-1 col-span-1 row-start-8 row-span-1"
                     departmentName="Finance"
-                    departmentLink="Finance"
+                    departmentLink="finance"
                     departmentDescription="The Finance Department is tasked with planning fundraisers, funding for Senior Prom and other grade-wide events, and all other senior caucus spending. Our goal is to ensure the senior caucus has the resources to keep hosting fun and engaging events for the entire Class of 2025."
                     director1info={
                         {
