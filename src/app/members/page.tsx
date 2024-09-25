@@ -28,6 +28,8 @@ import OtzarJaffe from "public/images/OtzarJaffe.png";
 
 import EthanSie from "public/images/EthanSie.png";
 
+import LiliKim from "public/images/LillianKim.png"
+
 
 import ChloeWong from "public/images/ChloeWong.png";
 
@@ -247,7 +249,12 @@ export default async function MemberPage() {
                         }
                     }
                     director2info={
-                        null
+                        {
+                            directorName: "Lillian Kim",
+                            position: "Media Director",
+                            image: LiliKim,
+                            description: "",
+                        }
                     }
                 />
 
