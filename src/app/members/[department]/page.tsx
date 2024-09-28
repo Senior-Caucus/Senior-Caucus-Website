@@ -1,10 +1,12 @@
 "use server"
 import { DepartmentPageProps } from "@/@types/PagePropTypes";
-import { getMemberData, getNamefromAA } from "@/actions/googleSheetsActions";
+import { getDeptPhoto, getMemberData, getNamefromAA } from "@/actions/googleSheetsActions";
 import Image from "next/image";
 
 import DepartmentBackgroundLarge from "public/images/DepartmentBackgroundLarge.svg";
 import DepartmentBackgroundSmall from "public/images/DepartmentBackgroundSmall.svg";
+
+import DeptPhotoPlaceholder from "public/images/PlaceholderDeptPhoto.png";
 
 import PersonBox from "@/components/PersonBox";
 import { Suspense } from "react";
@@ -37,7 +39,10 @@ function LoadingDepartment(props: DepartmentPageProps) {
             <div className="inter-extralight w-screen text-center text-6xl md:text-7xl">
                 {departmentUrls[(props.params.department as string)]}
             </div>
+            <div className="w-screen flex justify-center items-center">
 
+            <Image className="rounded-md w-[60vw] h-auto mt-5 mb-5" src = {DeptPhotoPlaceholder} alt ="department photo placeholder" />
+            </div>
             <div className="inter-bold w-screen text-center sm:text-left text-4xl sm:text-5xl mt-10 sm:mt-0">
                 Directors
             </div>
@@ -58,7 +63,10 @@ function LoadingDepartment(props: DepartmentPageProps) {
 
 async function DepartmentPageLoaded(props: DepartmentPageProps) {
     const data = await getMemberData(props.params.department);
-
+    const deptPhotoResult = await getDeptPhoto(props.params.department);
+    const sheetURL = deptPhotoResult && deptPhotoResult[0] ? deptPhotoResult[0][0] : null;
+    console.log("HELLLLOOO");
+    console.log(sheetURL);
     let directorInfo = [];
     let memberInfo = [];
 
@@ -86,7 +94,10 @@ async function DepartmentPageLoaded(props: DepartmentPageProps) {
         <div className="inter-extralight w-screen text-center text-6xl md:text-7xl">
             {name[0][0]}
         </div>
+        <div className="w-screen items-center flex justify-center">
 
+        <Image className="rounded-md w-[60vw] h-auto mt-5 mb-5" src={sheetURL} alt="Department Photo" width={1600} height={900} />
+        </div>
         <div className="inter-bold w-screen text-center sm:text-left text-4xl sm:text-5xl mt-10 sm:mt-0">
             Directors
         </div>
