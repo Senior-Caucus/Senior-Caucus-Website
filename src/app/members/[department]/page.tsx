@@ -1,4 +1,5 @@
 "use server"
+import React from "react";
 import { DepartmentPageProps } from "@/@types/PagePropTypes";
 import { getDeptPhoto, getMemberData, getNamefromAA } from "@/actions/googleSheetsActions";
 import Image from "next/image";
