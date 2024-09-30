@@ -65,8 +65,6 @@ async function DepartmentPageLoaded(props: DepartmentPageProps) {
     const data = await getMemberData(props.params.department);
     const deptPhotoResult = await getDeptPhoto(props.params.department);
     const sheetURL = deptPhotoResult && deptPhotoResult[0] ? deptPhotoResult[0][0] : null;
-    console.log("HELLLLOOO");
-    console.log(sheetURL);
     let directorInfo = [];
     let memberInfo = [];
 
