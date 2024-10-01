@@ -32,7 +32,7 @@ export default async function Home() {
         <Image src={aboutUsBackground} className='select-none pointer-events-none sm:invisible md:visible z-3 w-full h-full z-2 col-start-2 row-start-1 col-span-11 row-span-11' alt="background for the about us page (large verison)" />
         <Image className="z-2 col-start-1 row-span-3 col-span-11 ml-5 row-start-2 sm:row-start-3 sm:row-span-7 sm:col-span-10 sm:col-start-1 sm:ml-10 md:row-start-3 md:row-span-5 md:col-start-1 md:ml-20 md:col-span-8" src={RecDefault} alt="About us image" />
         <div className="z-1 row-start-7 text-2xl ml-2 col-start-1 col-span-full md:col-start-4 md:col-span-full row-span-full sm:row-start-9 md:row-start-10  md:row-span-4  sm:text-2xl inter-extralight mr-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          The Senior Caucus is dedicated to representing and advocating for the interests and concerns of the senior class. It plays a key role in organizing events, collecting resources, and communicating with school administration to alleviate stress and foster a sense of unity among the graduating class.
         </div>
       </div>
 
@@ -51,7 +51,7 @@ export default async function Home() {
           <Image className="w-full h-auto" src={RecDefault} alt="dept image 4" />
         </div>
         <div className='col-start-1 row-start-7 sm:row-start-7 col-span-full text-2xl row-span-full md:col-start-7 ml-4 sm:ml-8 md:row-start-3 md:col-span-6 md:row-span-6 inter-extralight mr-2'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          The Senior Caucus is a collaborative effort made up of various departments that manage events, resources, and communications for the senior class. Each department plays a vital role in organizing key activities, creating content, handling finances, and providing educational and career support, ensuring a memorable and well-rounded senior year experience.
           <br />
           <div className="transition-transform hover:translate-x-1">
             <Link href="/members" className="transition-transform hover:translate-x-1">

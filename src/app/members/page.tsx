@@ -239,7 +239,7 @@ export default async function MemberPage() {
                     className="col-start-1 col-span-1 row-start-7 row-span-1"
                     departmentName="Media"
                     departmentLink="media"
-                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    departmentDescription="The Media Department is responsible for documenting our senior year and events, creating time capsules in videos and photos."
                     director1info={
                         {
                             directorName: "Vita Kirschtein",
