@@ -88,6 +88,6 @@ export async function getEvents() {
   const response = await sheets.spreadsheets.values.get({
     spreadsheetId: process.env.EVENTS_SHEET_ID,
     range: range,
-  });
+  });``
   return response.data.values;
 }
