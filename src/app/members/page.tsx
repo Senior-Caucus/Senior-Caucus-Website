@@ -196,7 +196,7 @@ export default async function MemberPage() {
                     className="col-start-1 col-span-1 row-start-5 row-span-1"
                     departmentName="I/T"
                     departmentLink="it"
-                    departmentDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    departmentDescription="The I/T department is tasked with maintaining and building the digital infrastructure for Caucus, from ticketing for SProm to the Senior Caucus website :). We can't wait to work with other deptartments to help the student body!"
                     director1info={
                         {
                             directorName: "Elias Xu",
