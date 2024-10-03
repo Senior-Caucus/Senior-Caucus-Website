@@ -226,7 +226,7 @@ export default async function MemberPage() {
                             directorName: "Maegan Diep",
                             position: "Social Media Director",
                             image: MaeganDiep,
-                            description: ""
+                            description: "Hi, my name is Maegan but I also go by Mae! I have been part of this department since freshman year (and a director since sophomore year). Activities I love doing in my free time include spending time with loved ones, doing art, visiting museums, and baking!"
                         }
                     }
                     director2info={
