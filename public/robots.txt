@@ -1,0 +1,27 @@
+User-agent: *
+Disallow: /_next/
+Disallow: /api/
+Disallow: /static/
+Disallow: /server/
+Disallow: /cache/
+Disallow: /build/
+Disallow: /out/
+Disallow: /node_modules/
+Disallow: /coverage/
+Disallow: /build-manifest.json
+Disallow: /react-loadable-manifest.json
+Disallow: /trace
+Disallow: /app-build-manifest.json
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /yarn.lock
+Disallow: /tsconfig.json
+Disallow: /next.config.mjs
+Disallow: /postcss.config.mjs
+Disallow: /tailwind.config.ts
+Disallow: /LICENSE
+Disallow: /README.md
+Disallow: /CODE_OF_CONDUCT.md
+
+Sitemap: https://senior.stuysu.org/
+Sitemap: https://senior-caucus-website-git-main-elias-xus-projects.vercel.app/

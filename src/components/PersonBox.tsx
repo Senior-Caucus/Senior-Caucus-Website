@@ -21,7 +21,7 @@ export default async function PersonBox(props: PersonBoxProps) {
                         <div className="italic">
                             {props.position}
                         </div>
-                        <div className="col-start-7 inter-extralight text-sm sm:text-base">
+                        <div className="col-start-7 inter-extralight text-xs sm:text-base">
                             {props.description}
                         </div>
                     </div>
@@ -40,7 +40,7 @@ export default async function PersonBox(props: PersonBoxProps) {
                     <div className="italic">
                         {props.position}
                     </div>
-                    <div className="inter-extralight text-sm sm:text-1xl">
+                    <div className="col-start-7 inter-extralight text-xs sm:text-base">
                         {props.description}
                     </div>
                 </div>

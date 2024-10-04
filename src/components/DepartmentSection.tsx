@@ -22,10 +22,10 @@ interface DepartmentSectionProps {
 export default async function DepartmentSection(props: DepartmentSectionProps) {
     return (
         <div className={`w-screen h-screen md:h-[60vh] grid grid-cols-12 grid-rows-12 ${props.className !== null ? props.className:""}`} >
-            <div className="italic text-7xl md:text-8xl ml-3 col-start-1 row-start-1 col-span-full row-span-1">
+            <div className="italic text-5xl sm:text-7xl md:text-8xl ml-3 col-start-1 row-start-1 col-span-full row-span-1">
                 {props.departmentName}
             </div>
-            <div className="text-1xl inter-extralight row-start-2 md:row-start-3 md:row-span-1 md:col-start-1 md:col-span-full col-start-1 col-span-full row-span-1 ml-3 mt-4 ">
+            <div className="pb-3 text-sm sm:text-1xl inter-extralight row-start-2 md:row-start-3 md:row-span-1 md:col-start-1 md:col-span-full col-start-1 col-span-full row-span-1 ml-3 mt-2 sm:mt-4 ">
                 {props.departmentDescription}
             </div>
             <div className={`col-start-1 row-start-4 sm:row-start-4 md:row-start-5 md:ml-4 md:row-span-6 md:col-start-1 md:col-span-full lg:row-start-5 lg:row-span-6 lg:col-start-1 ${props.director2info === null ? "row-span-5": "row-span-full"} col-span-5 lg:col-span-6 grid grid-cols-1 ${props.director2info !== null ?`grid-rows-2`: `grid-rows-1`}  md:grid-cols-2 md:grid-rows-1 w-screen "h-auto" mt-6 sm:mt-2 lg:-mt-2 -ml-1`}>

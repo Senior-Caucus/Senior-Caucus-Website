@@ -49,7 +49,7 @@ export default async function MemberPage() {
             <Image className="invisible lg:visible ml-10 col-start-10 row-start-4 col-span-full row-span-full" src={GloriousLeaders} alt="The glorious leaders of Senior Caucus" />
             <Image className="select-none pointer-events-none invisible lg:visible md:row-start-3 col-start-1 lg:row-start-1 col-span-full row-span-full m-5" src={TheTeamHeroBackground} alt="background for the team hero large" />
             <Image className="select-none pointer-events-none visible md:visible lg:invisible col-start-1 row-start-1 row-span-full col-span-full ml-4" src={MobileTeamHeroBackground} alt="mobile background" />
-            <div className="arrow-down absolute bottom-4 left-1/2 transform -translate-x-1/2 mt-4 flex">
+            <div className="invisible sm:visible arrow-down absolute bottom-4 left-1/2 transform -translate-x-1/2 mt-4 flex">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -103,7 +103,7 @@ export default async function MemberPage() {
                     />
                 </div>
             </div>
-            <div className="flex justify-center text-7xl md:text-9xl inter-extralight">
+            <div className="flex justify-center text-6xl sm:text-7xl md:text-9xl inter-extralight">
                 Departments
             </div>
             <div className="w-screen h-10" />

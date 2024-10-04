@@ -50,7 +50,7 @@ export default async function Home() {
           <Image className="w-full h-auto" src={RecDefault} alt="dept image 3" />
           <Image className="w-full h-auto" src={RecDefault} alt="dept image 4" />
         </div>
-        <div className='col-start-1 row-start-7 sm:row-start-7 col-span-full text-2xl row-span-full md:col-start-7 ml-4 sm:ml-8 md:row-start-3 md:col-span-6 md:row-span-6 inter-extralight mr-2'>
+        <div className='col-start-1 row-start-5 sm:row-start-7 col-span-full text-2xl row-span-full md:col-start-7 ml-4 sm:ml-8 md:row-start-3 md:col-span-6 md:row-span-6 inter-extralight mr-2'>
           The Senior Caucus is a collaborative effort made up of various departments that manage events, resources, and communications for the senior class. Each department plays a vital role in organizing key activities, creating content, handling finances, and providing educational and career support, ensuring a memorable and well-rounded senior year experience.
           <br />
           <div className="transition-transform hover:translate-x-1">
@@ -69,8 +69,8 @@ export default async function Home() {
         <Image className="select-none pointer-events-none visible md:invisible col-start-1 row-start-1 col-span-full row-span-full" src={ResourcesSectionBackgroundSmall} alt="resources page background (on mobile)" />
         <Image className="col-start-1 row-start-2 ml-4 sm:col-start-2 sm:row-start-2 col-span-full sm:col-span-8 row-span-8 lg:col-start-6 lg:row-start-3 lg:col-span-6 lg:row-span-8" src={RecDefault} alt="Resources image" />
         <div className='sm:ml-2 col-start-1 row-start-1 col-span-full row-span-1 inter-extralight text-6xl sm:text-7xl md:text-8xl'>Resources</div>
-        <div className='ml-2 sm:ml-14 text-2xl md:text-2xl col-start-1 row-start-7 sm:row-start-5 row-span-8 col-span-full md:col-start-1 md:row-start-8 md:col-span-10 md:row-span-4 lg:col-start-1 lg:row-start-3 lg:col-span-6 lg:row-span-6 inter-extralight mr-2'>
-          Senior Caucus offers a variety of academic resources throughout the entire school year. Some of our projects include the College Data Organizer, the LAST newsletters, which offer glimpses into top colleges/universities through Stuy alumni, our scholarships compilations, the ongoing college workshop series with Y Tu También, and our course selection guides for each semester. Look out for more resources on college/career prep coming soon!
+        <div className='ml-2 sm:ml-14 text-2xl col-start-1 row-start-4 sm:row-start-5 row-span-8 col-span-full md:col-start-1 md:row-start-8 md:col-span-10 md:row-span-4 lg:col-start-1 lg:row-start-3 lg:col-span-6 lg:row-span-6 inter-extralight mr-2'>
+          Senior Caucus offers a variety of academic resources throughout the entire school year. Some of our projects include the College Data Organizer, the LAST newsletters, our scholarships compilations, the ongoing college workshop series with Y Tu También, and our course selection guides for each semester.
           <br />
           <div className="transition-transform hover:translate-x-1">
             <Link href="/resources" className="transition-transform hover:translate-x-1">
