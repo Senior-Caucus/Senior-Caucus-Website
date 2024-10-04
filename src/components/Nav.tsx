@@ -11,6 +11,11 @@ export default function Nav() {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     return (<div >
         <div className="h-[5rem] nav flex justify-between items-center px-6 py-4 bg-white">
             <Link href="/" className="hover:scale-105">
@@ -29,12 +34,12 @@ export default function Nav() {
                 </button>
             </div>
         </div>
-        {menuOpen &&
-            <div className="mobile-menu flex flex-col items-center py-4 space-y-4 bg-white shadow-md">
-                <Link href="/members" className="text-black hover:text-caucusblue inter-bold hover:scale-105">Members</Link>
-                <Link href="/events" className="text-black hover:text-caucusblue inter-bold hover:scale-105">Events</Link>
-                <Link href="/resources" className="text-black hover:text-caucusblue inter-bold hover:scale-105">Resources</Link>
-            </div>
-        }
+        {menuOpen && (
+                <div className="mobile-menu flex flex-col items-center py-4 space-y-4 bg-white shadow-md">
+                    <Link href="/members" className="text-black hover:text-caucusblue inter-bold hover:scale-105" onClick={closeMenu}>Members</Link>
+                    <Link href="/events" className="text-black hover:text-caucusblue inter-bold hover:scale-105" onClick={closeMenu}>Events</Link>
+                    <Link href="/resources" className="text-black hover:text-caucusblue inter-bold hover:scale-105" onClick={closeMenu}>Resources</Link>
+                </div>
+            )}
     </div>)
 }
