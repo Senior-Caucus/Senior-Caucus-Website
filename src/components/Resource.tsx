@@ -19,7 +19,7 @@ export default async function Resource(props: ResourceProps) {
             <div className="flex flex-col gap-2">
                 <p className="inter-extralight text-2xl">{props.description}</p>
                 <div className="transition-transform hover:translate-x-1 cursor-pointer">
-                    <a href={props.link.trim()} className="inter-bold underline">Link To {props.name}</a>
+                    <a href={props.link?.trim() || '#'} className="inter-bold underline">Link To {props.name}</a>
                     <Image alt="arrow to find out more" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" className="inline-block ml-1 w-6 h-6 " src={findOutArrow} />
                 </div>
             </div>

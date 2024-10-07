@@ -8,7 +8,7 @@ import MobileEventsHero from "public/images/MobileEventsHero.svg"
 
 import { getEvents } from "@/actions/googleSheetsActions";
 import Event from "@/components/Event";
-import { Suspense } from "react";
+import React, { Suspense } from "react";
 
 export default async function EventsPage() {
 
@@ -19,13 +19,13 @@ export default async function EventsPage() {
     }
 
     return (
-        <div className="scroll-smooth">
+        <div className="scroll-smooth overflow-x-hidden">
             <div className="grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)] w-lvw">
                 <Image className="visible md:invisible row-start-2 col-start-1 col-span-8 row-span-10 sm:row-start-2 sm:col-start-1 sm:col-span-6 sm:row-span-10 m-3" src={MobileEventsHero} alt="background for events page small " />
                 <Image className="select-none pointer-events-none invisible md:visible row-start-4 col-start-2 col-span-9 row-span-full lg:row-start-1 lg:col-start-1 lg:col-span-11 lg:row-span-11 m-3" src={EventsHeroBackgroundLarge} alt="background for events page" />
                 <Image className="visible md:invisible row-start-2 row-span-10 col-start-3 col-span-9 sm:col-start-3 sm:row-start-2 sm:row-span-10 sm:col-span-6  rounded-md" src={MobileHomeBattle} alt="homecoming picture + battle" />
                 <Image className="invisible md:visible row-start-2 row-span-10 col-start-2 col-span-11 lg:row-start-2 lg:ow-span-10 lg:col-start-3 lg:col-span-9" src={HomeBattle} alt="homecoming picture + battle" />
-                <div id="downarrowtarget" className="inter-extralight row-start-10 row-span-2 col-start-1 col-span-1 ml-4 text-9xl italic">
+                <div id="downarrowtarget" className="text-8xl inter-extralight row-start-10 row-span-2 col-start-1 col-span-1 ml-4 sm:text-9xl italic">
                     Events
                 </div>
             </div>
@@ -37,7 +37,7 @@ export default async function EventsPage() {
                         viewBox="0 0 24 24"
                         strokeWidth="2"
                         stroke="black"
-                        className="w-8 h-8 animate-bounce hover:animate-none hover:scale-x-110 hover:h-10 hover:w-10">
+                        className="invisible md:visible w-8 h-8 animate-bounce hover:animate-none hover:scale-x-110 hover:h-10 hover:w-10">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                 </a>

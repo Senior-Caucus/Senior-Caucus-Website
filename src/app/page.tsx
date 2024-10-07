@@ -87,9 +87,9 @@ export default async function Home() {
       <div className='grid grid-rows-12 grid-cols-12 w-screen h-screen overflow-x-hidden  overflow-y-hidden'>
         <Image className="select-none pointer-events-none invisible md:visible col-start-1 col-span-full row-start-1 row-span-full" src={EventsSectionsBackgroundLarge} alt="events section background for large devices" />
         <Image className="select-none pointer-events-none visible md:invisible col-start-1 col-span-full row-start-1 row-span-full" src={EventsSectionBackgroundSmall} alt="events section background for small devices" />
-        <Image className="row-start-1 mt-10 col-start-2 col-span-9  md:col-start-6 md:col-span-6 row-span-full w-full h-auto" src={RecDefault} alt="Resources image" />
+        <Image className="row-start-1 mt-10 col-start-1 col-span-10 ml-4 sm:ml-0  md:col-start-6 md:col-span-6 row-span-full w-full h-auto" src={RecDefault} alt="Resources image" />
         <div className='col-start-1 row-start-1 row-span-1 col-span-full inter-extralight text-7xl sm:text-8xl'>Events</div>
-        <div className='row-start-6 row-span-full col-start-1 col-span-full md:col-start-1 md:col-span-7 md:row-start-3 ml-10 md:rows-span-6 inter-extralight text-2xl mr-2'>
+        <div className='row-start-3 row-span-full col-start-1 col-span-full md:col-start-1 md:col-span-7 md:row-start-3 ml-10 md:rows-span-6 inter-extralight text-2xl mr-2'>
           The Events Department is responsible for planning and arranging events inside and outside of Stuy to promote school community and engagement. Possible events we look forward to hosting this year include Senior Field Day, slime events, and a movie night. We will also be organizing Senior Prom and hosting fundraisers throughout the year, such as bake sales, to lower costs of tickets for everyone.
           <br />
           <div className='transition-transform hover:translate-x-1'>
