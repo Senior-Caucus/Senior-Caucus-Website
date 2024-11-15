@@ -1,3 +1,4 @@
+"use server"
 import ResourceLeftBackgroundLarge from "public/images/ResourceBackgroundLeft1.svg"
 import ResourceRightBackgroundLarge from "public/images/ResourceBackgroundRightLarge.svg"
 import Image from "next/image";

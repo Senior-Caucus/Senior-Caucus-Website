@@ -12,16 +12,16 @@ import DeptPhotoPlaceholder from "public/images/PlaceholderDeptPhoto.png";
 import PersonBox from "@/components/PersonBox";
 import { Suspense } from "react";
 
-export default async function DepartmentPage(props: DepartmentPageProps) {
+export default async function DepartmentPage(props: Promise<DepartmentPageProps>) {
     return (
-        <Suspense fallback={<LoadingDepartment {...props} />}>
-            <DepartmentPageLoaded {...props} />
+        <Suspense fallback={await <LoadingDepartment {...props} />}>
+            {await <DepartmentPageLoaded {...props} />}
         </Suspense>
     );
 }
 
 
-function LoadingDepartment(props: DepartmentPageProps) {
+async function LoadingDepartment(props: DepartmentPageProps) {
     const departmentUrls: { [key: string]: string } = {
         "events": "Events",
         "graphics": "Graphics",
@@ -42,7 +42,7 @@ function LoadingDepartment(props: DepartmentPageProps) {
             </div>
             <div className="w-screen flex justify-center items-center">
 
-            <Image className="rounded-md w-[60vw] h-auto mt-5 mb-5" src = {DeptPhotoPlaceholder} alt ="department photo placeholder" />
+                <Image className="rounded-md w-[60vw] h-auto mt-5 mb-5" src={DeptPhotoPlaceholder} alt="department photo placeholder" />
             </div>
             <div className="inter-bold w-screen text-center sm:text-left text-4xl sm:text-5xl mt-10 sm:mt-0">
                 Directors
@@ -95,7 +95,7 @@ async function DepartmentPageLoaded(props: DepartmentPageProps) {
         </div>
         <div className="w-screen items-center flex justify-center">
 
-        <Image className="rounded-md w-[60vw] h-auto mt-5 mb-5" src={sheetURL} alt="Department Photo" width={1600} height={900} />
+            <Image className="rounded-md w-[60vw] h-auto mt-5 mb-5" src={sheetURL} alt="Department Photo" width={1600} height={900} />
         </div>
         <div className="inter-bold w-screen text-center sm:text-left text-4xl sm:text-5xl mt-10 sm:mt-0">
             Directors

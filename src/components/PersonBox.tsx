@@ -1,3 +1,4 @@
+"use server"
 interface PersonBoxProps {
     className: string,
     name: string,

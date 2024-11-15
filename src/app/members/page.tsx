@@ -40,7 +40,6 @@ import SuhanaKumar from "public/images/SuhanaKumar.png"
 import VitaKirschtein from "public/images/VitaKirschtein.png"
 
 export default async function MemberPage() {
-
     return (<div>
         <div className="w-full grid grid-cols-12 grid-rows-12 h-[calc(100vh-5rem)]">
             <Image className="overflow-hidden ml-0 overflow-x-auto row-start-3 col-start-1 row-span-full col-span-full lg:col-start-1 lg:mt-4 md:col-span-9 lg:row-start-1 lg:overflow-x-auto lg:row-span-11" src={HomecomingImage} alt="Junior Caucus' events during homecoming" />
