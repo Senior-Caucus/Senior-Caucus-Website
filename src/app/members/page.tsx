@@ -253,7 +253,7 @@ export default async function MemberPage() {
                             directorName: "Lillian Kim",
                             position: "Media Director",
                             image: LiliKim,
-                            description: "",
+                            description: "Hi! I'm Lily, I like to fence, listen to music and watch movies (a lot of them)! I am also an avid reader, so I'm always looking for new recommendations :). I value teamwork and efficiency- looking forward to an amazing senior year!",
                         }
                     }
                 />
