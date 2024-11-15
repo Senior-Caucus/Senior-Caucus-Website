@@ -12,7 +12,7 @@ import DeptPhotoPlaceholder from "public/images/PlaceholderDeptPhoto.png";
 import PersonBox from "@/components/PersonBox";
 import { Suspense } from "react";
 
-export default async function DepartmentPage(props: DepartmentPageProps) {
+export default async function DepartmentPage(props: any) {
     const resolvedProps = await props;
     return (
         <Suspense fallback={<LoadingDepartment {...resolvedProps} />}>
