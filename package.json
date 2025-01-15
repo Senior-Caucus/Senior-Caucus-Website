@@ -12,7 +12,7 @@
     "@eslint/config-array": "^0.19.1",
     "@eslint/object-schema": "^2.1.4",
     "dotenv": "^16.4.7",
-    "fs-extra": "^11.2.0",
+    "fs-extra": "^11.3.0",
     "glob": "^11.0.1",
     "googleapis": "^144.0.0",
     "next": "^15.1.4",
