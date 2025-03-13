@@ -9,9 +9,7 @@ updates:
     open-pull-requests-limit: 5 # Limits the number of open pull requests for dependency updates
     target-branch: "main" # The branch you want the pull requests to be opened against
     assignees:
-      - "your-github-username" # Assigns the pull request to your GitHub username
-    reviewers:
-      - "your-github-username" # Adds reviewers to the pull request
+      - "Elias2660" # Assigns the pull request to your GitHub username
     labels:
       - "dependencies" # Adds a "dependencies" label to the pull requests
 
