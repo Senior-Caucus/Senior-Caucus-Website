@@ -27,7 +27,7 @@ export default async function RootLayout({
 
       </head>
       <html lang="en">
-        <body className={`${inter.className} overflow-x-hidden`}>
+        <body className={`inter overflow-x-hidden`}>
           <Nav />
           {children}
           <Footer />
